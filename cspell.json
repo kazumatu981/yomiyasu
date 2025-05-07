@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "Kazuyoshi",
+        "Matsumoto",
+        "vuepress",
+        "textlint"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "package.json",
+        ".textlintrc.json",
+        "cspell.json"
+    ]
+}
