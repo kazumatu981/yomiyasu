@@ -56,5 +56,7 @@ export default defineUserConfig({
     lang: 'ja-JP',
     title: 'よみやすいコード',
     description: 'よみやすいコードを書くために私たちは何をすべきか',
-    dest: `./dist`
+    dest: `./dist`,
+
+    base: '/yomiyasu/',
 })
