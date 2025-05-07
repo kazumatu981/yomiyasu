@@ -1,0 +1,19 @@
+{
+    "plugins": {
+      "@textlint/markdown": true
+    },
+    "filters": {},
+    "rules": {
+      "preset-ja-technical-writing": {
+        "ja-no-mixed-period": false,
+        "no-exclamation-question-mark": false
+      },
+      "@textlint-ja/no-synonyms": true,
+      "ja-hiragana-fukushi": true,
+      "ja-hiragana-hojodoushi": true,
+      "ja-hiragana-keishikimeishi": true,
+      "ja-joyo-or-jinmeiyo-kanji": true,
+      "ja-no-orthographic-variants": true,
+      "ja-unnatural-alphabet": true
+    }
+  }
