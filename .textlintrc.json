@@ -6,7 +6,8 @@
     "rules": {
       "preset-ja-technical-writing": {
         "ja-no-mixed-period": false,
-        "no-exclamation-question-mark": false
+        "no-exclamation-question-mark": false,
+        "ja-no-weak-phrase": false
       },
       "@textlint-ja/no-synonyms": true,
       "ja-hiragana-fukushi": true,

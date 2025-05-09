@@ -1,24 +1,20 @@
 ---
 home: true
 actions:
-    - text: 目標を決める
+    - text: 🗒️よみやすさとは
       link: /contents/
+      type: 'secondary'      
 
-    - text: 名前にこだわる
+    - text: 🛠️ 技術
       link: /contents/naming/
+      type: 'secondary'      
 
-    - text: metricsにこだわる
+    - text: ♥️ 感性
       link: /contents/metrics/
-
-    - text: 仕組みにこだわる
-      link: /contents/functionblock/
-
-    - text: このドキュメントについて
-      link: /about.html
-      type: 'secondary'
+      type: 'secondary'      
 
 footer: MIT Licensed | Copyright © 2025 Kazuyoshi Matsumoto
 ---
 
 このサイトはまだ編集中です。
-[目標を決める](/contents/) を読んで書きたいことの雰囲気をくみ取ってください。
+[🗒️よみやさとは](/contents/) を読んで書きたいことの雰囲気をくみ取ってください。

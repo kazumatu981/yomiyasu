@@ -7,48 +7,56 @@ export default defineUserConfig({
     theme: defaultTheme({
         navbar:[
             {
+                text: 'home',
+                link: '/',
+            },
+            {
                 text: 'about',
                 link: '/about.html',
             }
         ],
         sidebar: [
             {
-                text: '目標をきめる',
+                text: '「よみやすさ」とは',
                 prefix: '/contents/',
                 link: '/contents/'
             },
             {
-                text: '名前にこだわる',
-                prefix: '/contents/naming/',
-                link: '/contents/naming/',
+                text: '感性',
+                prefix: '/contents/emotion/',
                 children: [
                     {
-                        text: '名は体を表す',
-                        link: '/contents/naming/name-means-function.html'
+                        text: '物語',
+                        link: '/contents/emotion/story.html'
                     },
                     {
-                        text: '動詞 vs 名詞',
-                        link: '/contents/naming/verb-vs-noun.html'
-                    },
-                    {
-                        text: '大文字と小文字',
-                        link: '/contents/naming/capitalization.html'
-                    },
+                        text: 'やさしさ',
+                        link: '/contents/emotion/kindness.html'
+                    }
+
                 ]
             },
             {
-                text: 'メトリクスにこだわる',
-                prefix: '/contents/metrics/',
-                link: '/contents/metrics/'
-            } ,
-            {
-                text: '仕組みにこだわる',
-                prefix: '/contents/functionblock/',
-                link: '/contents/functionblock/'
-            },           
-            {
-                text: 'このドキュメントについて',
-                link: '/about.html'
+                text: '技術',
+                prefix: '/contents/technical/',
+                children: [
+                    {
+                        text: '名付け',
+                        link: '/contents/technical/naming.html'
+                    },
+                    {
+                        text: '空白とコメント',
+                        link: '/contents/technical/spacing-and-comment.html'
+                    },
+                    {
+                        text: 'メトリクス',
+                        link: '/contents/technical/metrics.html'
+                    },
+                    {
+                        text: 'しくみ',
+                        link: '/contents/technical/structure.html'
+                    },
+                ]
             },
         ]
     }),

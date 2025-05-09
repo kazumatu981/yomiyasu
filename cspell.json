@@ -5,7 +5,8 @@
         "Kazuyoshi",
         "Matsumoto",
         "vuepress",
-        "textlint"
+        "textlint",
+        "yomiyasu"
     ],
     "ignorePaths": [
         "node_modules",
