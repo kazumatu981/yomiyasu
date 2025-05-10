@@ -6,11 +6,11 @@ actions:
       type: 'secondary'      
 
     - text: 🛠️ 技術
-      link: /contents/naming/
+      link: /contents/technical/
       type: 'secondary'      
 
     - text: ♥️ 感性
-      link: /contents/metrics/
+      link: /contents/emotional/
       type: 'secondary'      
 
 footer: MIT Licensed | Copyright © 2025 Kazuyoshi Matsumoto
