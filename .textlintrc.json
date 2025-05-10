@@ -2,7 +2,13 @@
     "plugins": {
       "@textlint/markdown": true
     },
-    "filters": {},
+    "filters": {
+      "allowlist":{
+        "allow":[
+        "羊頭狗肉"
+        ]
+      }
+    },
     "rules": {
       "preset-ja-technical-writing": {
         "ja-no-mixed-period": false,

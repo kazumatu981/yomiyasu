@@ -11,20 +11,21 @@
     "docs:lint": "textlint docs"
   },
   "devDependencies": {
+    "vuepress": "^2.0.0-rc.22",
     "@vuepress/bundler-vite": "^2.0.0-rc.22",
     "@vuepress/theme-default": "^2.0.0-rc.101",
     "sass-embedded": "^1.87.0",
-    "vuepress": "^2.0.0-rc.22",
     "sudachi-synonyms-dictionary": "latest",
     "textlint": "latest",
     "@textlint/textlint-plugin-markdown": "latest",
-    "textlint-rule-preset-ja-technical-writing": "latest",
     "@textlint-ja/textlint-rule-no-synonyms": "latest",
+    "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-rule-ja-hiragana-fukushi": "latest",
     "textlint-rule-ja-hiragana-hojodoushi": "latest",
     "textlint-rule-ja-hiragana-keishikimeishi": "latest",
     "textlint-rule-ja-joyo-or-jinmeiyo-kanji": "latest",
     "textlint-rule-ja-no-orthographic-variants": "latest",
-    "textlint-rule-ja-unnatural-alphabet": "latest"
+    "textlint-rule-ja-unnatural-alphabet": "latest",
+    "textlint-rule-preset-ja-technical-writing": "latest"
   }
 }
