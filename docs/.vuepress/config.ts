@@ -1,6 +1,7 @@
 import {viteBundler} from '@vuepress/bundler-vite'
 import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
+import markdownItMdc from 'markdown-it-mdc'
 
 export default defineUserConfig({
     bundler: viteBundler(),
@@ -60,6 +61,14 @@ export default defineUserConfig({
             },
         ]
     }),
+
+    extendsMarkdown: (md) => {
+        md.use(markdownItMdc);
+    },
+
+    head: [
+        ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
+    ],
 
     lang: 'ja-JP',
     title: 'よみやすいコード',
