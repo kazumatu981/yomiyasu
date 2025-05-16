@@ -175,15 +175,83 @@ Java, C#,TypeScript, Python といった高級なプログラミング言語か�
 
 ### 大文字/小文字
 
+| 形式名 | 説明 | サンプル |
+| -- | -- | -- |
+| `camelCase` | 一単語目だけをすべて小文字で書き、残りの単語の先頭文字を大文字で書く | `readFile()`,  `fileName`|
+| `PascalCase` | 単語の先頭を大文字で書き、残りをすべて小文字で書く | `ReadFile()`,  `FileName`|
+| `snake_case` | 単語はすべて小文字で書いて、区切りをアンダースコアで記述する | `read_file()`,  `file_name` |
+
 ### 動詞/名詞
+
+慣習上、メソッドや関数は動詞で始まるようにして、プロパティや変数は名詞で名づけます。
+こうすることで、ソースコードはまるで英文を読んでいるかのように読みやすくなります。
+
+```javascript
+const reader = new InputReader(input);
+const fileWriter = new FileWriter(fileName);
+
+while(!reader.isEof) {
+    const line = await reader.readLine();
+    await fileWriter.writeLine(line);
+}
+```
+
+もちろん例外はあります。
+例えば、文字列化をするメソッドは慣習上 `toString()` と動詞ではなく前置詞で始まります。
+イベントを表す `on*()` も前置詞で始めます。
+
+::div{.info title="ヒント"}
+
+筆者はこの問題に対して、JavaScriptおよびTypeScriptに対応した
+[ESLint](https://eslint.org/)
+のプラグインを開発中です。
+メソッドや関数が **よく知られた動詞** で始まることを強制するためのプラグインとして設計しています。
+
+<i class="fa-brands fa-square-github"></i>
+[kazumatu981/eslint-plugin-verb-method-name](https://github.com/kazumatu981/eslint-plugin-verb-method-name)
+
+:: 
 
 ### 接頭語
 
 ## 命名に迷ったら生成AIも活用しよう
 
+近年
+
+
 ### 事例：統合開発環境のAI機能を使って提案してもらう
 
+以下の事例は、GitHub Copilot をAgentモードで動作をさせて、メソッド名を変更してもらう例です。
+
+```typescript
+    /**
+     * 次の字句を読み込み、トークンとして返します。
+     * 空白をスキップし、現在の文字が数字、演算子、または括弧の場合に対応するトークンを切り出します。
+     * 入力文字列の末尾に達している場合、または空白のみの場合は未定義を返します。
+     * 予期しない文字が現れた場合は例外をスローします。
+     * @returns 切り出されたトークン、または未定義
+     * @throws TokenizerError - 予期しない文字が検出された場合
+     */
+    public someMethod(): Token | undefined {
+        // ....
+    }
+```
+
+メソッドの実装がほぼ完了しており、メソッドの役割がヘッダコメントとして書かれていた場合、生成AIは精度よくメソッド名を決定してくれます。
+
+```text
+`someMethod()` のメソッド名が適切ではありません。
+ヘッダコメントやメソッドの実装を参考にしながら、適切なメソッド名に変換してください。
+ただし、メソッド名は動詞で始まる camelCaseに編集してください。
+```
+
+このように、明示的に、ヘッダコメントとメソッドの実装を参考にしながら、提案することと明示します。
+また、命名規則である、メソッド名の制約(動詞で始まる、camelCaseにする)を指定するとそれに従って提案してくれます。
+
 ### 事例：プロンプトでメソッド名を提案してもらう
+
+以下の例は、クラスのテンプレートを提案してもらう場合のプロンプトの例です。
+このようにクラス使用を可能な限り明確に書くことで、しっくりくるメソッド名を提案してくれます。
 
 ```markdown
 ## 前提
