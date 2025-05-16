@@ -3,6 +3,7 @@ import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
 import markdownItMdc from 'markdown-it-mdc'
 
+
 export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({

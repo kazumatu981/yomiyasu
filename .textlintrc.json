@@ -5,6 +5,7 @@
     "filters": {
       "allowlist":{
         "allow":[
+          "狗",
           "羊頭狗肉",
           "ああああ"
         ]
