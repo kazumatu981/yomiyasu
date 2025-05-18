@@ -1,6 +1,5 @@
 @use 'sass:color';
 
-
 @mixin container($color: #000) {
     border: solid 1px $color;
     border-radius: 1rem;
