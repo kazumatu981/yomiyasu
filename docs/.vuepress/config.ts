@@ -2,7 +2,10 @@ import {viteBundler} from '@vuepress/bundler-vite'
 import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
 import markdownItMdc from 'markdown-it-mdc'
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
+import { getDirname, path } from 'vuepress/utils'
 
+const __dirname = import.meta.dirname || getDirname(import.meta.url);
 
 export default defineUserConfig({
     bundler: viteBundler(),
@@ -60,12 +63,18 @@ export default defineUserConfig({
                     },
                 ]
             },
-        ]
+        ],
+        sidebarDepth: 1
     }),
 
     extendsMarkdown: (md) => {
         md.use(markdownItMdc);
     },
+    plugins: [
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+    ],
 
     head: [
         ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
