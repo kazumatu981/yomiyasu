@@ -73,7 +73,7 @@ if (someValueIsOdd) {
 * 一文字の変数名 (例: `a`, `b`, `c`)
 * 何も考えていない (例: `abc`, `xyz`)
 * 理由もなく連番が入っている (例: `test001`, `method1`)
-* 作者の名前が入ってしまっている (例: `matumotoFlg`)
+* 作者の名前が入ってしまっている (例: `matsumotoFlg`)
 * まったく関係のない名前 (例: `kaeru`)
 
 ::labeled-container-with-fa-icon{icon="fa-book" label="ノート" colorClass="yellow-container"}
