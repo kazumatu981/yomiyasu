@@ -1,45 +1,23 @@
 @use 'sass:color';
+@use './color.scss' as basic-colors;
 
-@mixin container($color: #000) {
-    border: solid 1px $color;
-    border-radius: 1rem;
-    margin: 1rem;
-    
-    > * {
-        margin: 0.5rem;
-    }
-    &::before {
-        padding: 0.25rem 1rem;
-        border-radius: 1rem 1rem 0 0;
-        background-color: $color;
-        color: #fff;
-        display: block; /* ブロック要素として表示 */
-        font-weight: bold; /* タイトルを強調 */
-        margin-bottom: 1.0rem; /* タイトルと内容の間に余白を作る */
+
+@mixin colored-container($color: #000){
+    border-color: $color !important;
+    .labeled-container__label {
+        background-color: $color !important;
     }
 }
 
-div.remark{
-    @include container($color: #f00);
-    &::before {
-        content: "\f071" attr(title);
-        font-family: "Font Awesome 5 Free";
-    }
+.red-container {
+    @include colored-container(basic-colors.$accent2);
 }
-
-div.info{
-    @include container($color: blue);
-    &::before {
-        content: "\f071" attr(title);
-        font-family: "Font Awesome 5 Free";
-    }
+.green-container {
+    @include colored-container(basic-colors.$accent1);
 }
-
-
-div.note{
-    @include container($color: green);
-    &::before {
-        content: "\f02d" attr(title);
-        font-family: "Font Awesome 5 Free";
-    }
+.yellow-container {
+        @include colored-container(basic-colors.$accent4);
+}
+.blue-container {
+    @include colored-container(basic-colors.$accent3);
 }
