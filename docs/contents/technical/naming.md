@@ -76,7 +76,7 @@ if (someValueIsOdd) {
 * 作者の名前が入ってしまっている (例: `matsumotoFlg`)
 * まったく関係のない名前 (例: `kaeru`)
 
-::labeled-container-with-fa-icon{icon="fa-book" label="ノート" colorClass="yellow-container"}
+::labeled-container-with-fa-icon{type="note"}
 
 例外はもちろんあります。
 以下のような変数は1文字からなる変数ですが、それ自身が意味を持つのでそのまま使ってもかまいせん。
@@ -126,7 +126,7 @@ function writeFile(fileName: string): void{
 こうなると、基準書はどんどん形骸化していき使われない基準が増えていってしまいます。
 定期的に基準を見直すようにしましょう。
 
-::labeled-container-with-fa-icon{icon="fa-circle-info" label="ヒント" colorClass="blue-container"}
+::labeled-container-with-fa-icon{type="info"}
 
 近年はツールが高度化、高速化しているため、基準書に記述された基準の多くはリアルタイムに指摘し、修正を促すツールが増えました。
 [Prettier](https://prettier.io/)
@@ -219,7 +219,7 @@ while(!reader.isEof) {
 例えば、文字列化をするメソッドは慣習上 `toString()` と動詞ではなく前置詞で始まります。
 イベントを表す `on*()` も前置詞で始めます。
 
-::labeled-container-with-fa-icon{icon="fa-circle-info" label="ヒント" colorClass="blue-container"}
+::labeled-container-with-fa-icon{type="info"}
 
 筆者はこの問題に対して、JavaScriptおよびTypeScriptに対応した
 [ESLint](https://eslint.org/)
