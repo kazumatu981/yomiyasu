@@ -8,3 +8,10 @@
     --accent4-color: #968929;
     --accent5-color: color.grayscale(var(--vp-c-accent));
 }
+
+$light-green: var(--normal-color);
+$green: var(--accent1-color);
+$red: var(--accent2-color);
+$blue: var(--accent3-color);
+$yellow: var(--accent4-color);
+$gray: var(--accent5-color);

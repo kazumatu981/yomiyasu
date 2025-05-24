@@ -1,4 +1,26 @@
-span.red-text{    
-    color: var(--accent2-color);
+@use 'color' as my-colors;
+
+@mixin colored-emphasis-text($color: #000){
+    color: $color;
     font-weight: bold;
+}
+
+.red-text{    
+    @include colored-emphasis-text(my-colors.$red);
+}
+
+.green-text{
+    @include colored-emphasis-text(my-colors.$green);
+}
+
+.yellow-text{
+    @include colored-emphasis-text(my-colors.$yellow);
+}
+
+.blue-text{
+    @include colored-emphasis-text(my-colors.$blue);
+}
+
+.gray-text{
+    @include colored-emphasis-text(my-colors.$gray);
 }
