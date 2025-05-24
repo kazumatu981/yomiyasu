@@ -24,7 +24,7 @@ defineProps({
 <style lang="scss" scoped>
 
 $corner-radius: 0.5rem;
-$icon-size: 1.75rem;
+$icon-size: 1.2rem;
 
 $labelTextColor: var(--vp-c-white);
 $contentBackgroundColor: var( --vp-c-bg-alt);
