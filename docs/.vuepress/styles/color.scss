@@ -6,7 +6,7 @@
     --accent2-color: #963729;
     --accent3-color: #392996;
     --accent4-color: #968929;
-    --accent5-color: color.grayscale(var(--vp-c-accent));
+    --accent5-color: var(--vp-c-border-hard);
 }
 
 $light-green: var(--normal-color);

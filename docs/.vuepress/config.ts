@@ -32,12 +32,16 @@ export default defineUserConfig({
                 prefix: '/contents/emotion/',
                 children: [
                     {
+                        text: 'いってはいけない言葉たち',
+                        link: '/contents/emotional/anti-pattern.html'
+                    },
+                    {
                         text: '物語',
-                        link: '/contents/emotion/story.html'
+                        link: '/contents/emotional/story.html'
                     },
                     {
                         text: 'やさしさ',
-                        link: '/contents/emotion/kindness.html'
+                        link: '/contents/emotional/kindness.html'
                     }
 
                 ]
