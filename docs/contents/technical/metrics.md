@@ -35,10 +35,33 @@
 
 ### ファイルに実装されたクラスの個数
 
-「ひとつのファイルにはひとつのクラス(またはインタフェースや構造体)に納めるべき」というコード規約がある場合があります。
-これについては **賛否両論** あります。
+プロジェクトを進めていると、「ひとつのファイルにはひとつのクラス(またはインタフェースや構造体)に納めるべき」というコード規約を決めることがあります。
+実は、これについては **賛否両論** あります。
 
-もちろん、ひとつの
+もちろん、「ひとつのファイルにひとつのクラスを実装する」という原則探せるたほうが以下のようなメリットはある。
+
+* ファイル名でそのクラスを探せる
+* クラスの実装をカプセル化できる
+* クラスの再利用が簡単になる
+
+しかしながら以下の例のように、「ひとつのファイルに複数のクラス(インタフェース)を実装する」ことはあり得る。
+
+```typescript
+type EndOfLineType = 'cr' | 'lf' | 'crlf' | 'auto'
+export interface TextFileReaderOptions {
+    eol?: EndOfLineType,
+    encoding?: string,
+    codePage?: number
+}
+
+export class TextFileReader {
+    protected constructor(options?: TextFileReaderOptions) {
+        // ... implement here
+    }
+}
+```
+
+重要なことは、 **「ひとつのファイルはひとつの意味的クラス」に分割する** ことと筆者は考える。
 
 ## <i class="fa-solid fa-cubes blue-text"></i> クラス単位のメトリクス
 
@@ -51,6 +74,35 @@
 ### 関数やメソッドの行数
 
 ### 関数やメソッドの引数の数
+
+:::tabs
+
+@tab 悪い例
+
+```typescript
+export function readTextFile(
+    filePath: string,
+    eol?: EndOfLineType,
+    encoding?: string,
+    codePage?: number) {
+    // .....
+}
+```
+
+@tab 良い例
+
+```typescript
+export interface TextFileReaderOptions {
+    eol?: EndOfLineType,
+    encoding?: string,
+    codePage?: number
+}
+
+export function readTextFile(filePath: string, options?: TextFileReaderOptions) {
+    // .....
+}
+```
+:::
 
 ### 関数やメソッドの循環的複雑度
 
