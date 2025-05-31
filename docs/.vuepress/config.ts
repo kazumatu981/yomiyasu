@@ -28,7 +28,7 @@ export default defineUserConfig({
                 link: '/contents/'
             },
             {
-                text: '感性',
+                text: '♥️感性的側面',
                 prefix: '/contents/emotion/',
                 children: [
                     {
@@ -47,8 +47,9 @@ export default defineUserConfig({
                 ]
             },
             {
-                text: '技術',
+                text: '🏭技術的側面',
                 prefix: '/contents/technical/',
+                link: '/contents/technical/',
                 children: [
                     {
                         text: '名付け',
@@ -92,7 +93,7 @@ export default defineUserConfig({
     ],
 
     lang: 'ja-JP',
-    title: 'よみやすいコード',
+    title: 'よみやすコード',
     description: 'よみやすいコードを書くために私たちは何をすべきか',
     dest: `./dist`,
 
