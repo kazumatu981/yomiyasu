@@ -33,11 +33,11 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
     border-width: 1.5px;
     border-radius: $corner-radius;
     background-color: $contentBackgroundColor;
-    box-shadow:5px 5px 10px #b2b2b2;
-
+    box-shadow:none;
+    
     &:hover {
         background-color: var(--vp-c-bg-soft);
-        box-shadow:none;
+        box-shadow:5px 5px 10px #b2b2b2;
     }
 
     

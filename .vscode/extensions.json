@@ -3,6 +3,7 @@
         "davidanson.vscode-markdownlint",
         "ms-ceintl.vscode-language-pack-ja",
         "streetsidesoftware.code-spell-checker",
-        "3w36zj6.textlint"
+        "3w36zj6.textlint",
+        "hediet.vscode-drawio"
     ]
 }
