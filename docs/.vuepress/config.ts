@@ -24,7 +24,6 @@ export default defineUserConfig({
         sidebar: [
             {
                 text: '「よみやすさ」とは',
-                prefix: '/contents/',
                 link: '/contents/'
             },
             {
@@ -36,11 +35,11 @@ export default defineUserConfig({
                         link: '/contents/emotional/anti-pattern.html'
                     },
                     {
-                        text: '物語',
-                        link: '/contents/emotional/story.html'
+                        text: 'コードは誰の持ち物か',
+                        link: '/contents/emotional/public-property.html'
                     },
                     {
-                        text: 'やさしさ',
+                        text: '読み手にやさしさを',
                         link: '/contents/emotional/kindness.html'
                     }
 
