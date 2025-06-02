@@ -69,7 +69,8 @@ export default defineUserConfig({
                 ]
             },
         ],
-        sidebarDepth: 1
+        sidebarDepth: 1,
+        logo:  '/assets/img/logo.drawio.svg'
     }),
 
     extendsMarkdown: (md) => {
@@ -92,8 +93,10 @@ export default defineUserConfig({
     ],
 
     lang: 'ja-JP',
+
     title: 'よみやすコード',
     description: 'よみやすいコードを書くために私たちは何をすべきか',
+
     dest: `./dist`,
 
     base: '/yomiyasu/',

@@ -1,11 +1,19 @@
 
+// #region 画像共通スタイル
 // 画像の背景色
-  img {
-    padding: 1.5rem;
-    background-color: white;
-  }
+img {
+  padding: 1.5rem;
+  background-color: white;
+}
+// #endregion
 
-// 画像サイズ調整
+// #region ロゴスタイル
+img.vp-site-logo {
+  padding:0;
+}
+// #endregion
+
+// #region 画像サイズ調整
 
 // #region /contents/technical/naming.md
 img[alt="適当な名前"] {
@@ -18,3 +26,5 @@ img[alt^="龍"] {
     width: 75%;
 }
 //#endregion
+
+// #endregion
