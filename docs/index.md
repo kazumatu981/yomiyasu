@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /assets/img/logo.drawio.svg
 actions:
     - text: 🗒️よみやすさとは
       link: /contents/
