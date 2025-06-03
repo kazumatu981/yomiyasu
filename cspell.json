@@ -2,11 +2,18 @@
     "version": "0.2",
     "language": "en",
     "words": [
+        // サービス名
+        "Qiita",
+        // 企業名
+        "NEXCO",
+        // パッケージ名
+        "vuepress",
+        "textlint",
+        // 作者
         "Kazuyoshi",
         "Matsumoto",
         "kazumatu981",
-        "vuepress",
-        "textlint",
+        // プロジェクト名
         "yomiyasu"
     ],
     "ignorePaths": [
