@@ -70,7 +70,7 @@ export default defineUserConfig({
             },
         ],
         sidebarDepth: 1,
-        logo:  '/assets/img/logo.drawio.svg'
+        logo:  '/assets/img/logo.drawio.svg',
     }),
 
     extendsMarkdown: (md) => {
@@ -90,6 +90,7 @@ export default defineUserConfig({
 
     head: [
         ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
+        ['link', {rel: 'icon', href: './assets/img/icon.drawio.svg', type: 'image/svg+xml'}],
     ],
 
     lang: 'ja-JP',
