@@ -27,15 +27,6 @@ defineProps({
 $corner-radius: 0.5rem;
 $icon-size: 1.2rem;
 
-$labelTextColor: var(--vp-c-accent-text);
-$contentBackgroundColor: var( --vp-c-bg-alt);
-$containerRed: var(--accent2-color);
-$containerGreen: var(--accent1-color);
-$containerYellow: var(--accent4-color);
-$containerBlue: var(--accent3-color);
-$containerGray: gray;
-
-
 .labeled-container {
     display: flex;
     flex-direction: column;
