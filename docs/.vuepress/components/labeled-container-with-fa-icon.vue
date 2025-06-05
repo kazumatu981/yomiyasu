@@ -26,15 +26,6 @@ defineProps({
 $corner-radius: 0.5rem;
 $icon-size: 1.2rem;
 
-$labelTextColor: var(--vp-c-white);
-$contentBackgroundColor: var( --vp-c-bg-alt);
-$containerRed: var(--accent2-color);
-$containerGreen: var(--accent1-color);
-$containerYellow: var(--accent4-color);
-$containerBlue: var(--accent3-color);
-$containerGray: gray;
-
-
 .labeled-container {
     display: flex;
     flex-direction: column;
@@ -76,7 +67,10 @@ $containerGray: gray;
 }
 
 @mixin colored-container(
-    $containerColor: $containerGray) {
+    $containerColor: var(--yomiyasu-dark-gray),
+    $labelTextColor: var(--yomiyasu-white),
+    $contentBackgroundColor: var( --yomiyasu-x-light-gray),
+    $contentTextColor: var(--yomiyasu-black)) {
 
     border-color: $containerColor !important;
     .labeled-container__label {
@@ -84,24 +78,21 @@ $containerGray: gray;
         background-color: $containerColor !important;
     }
     .labeled-container__content {
+        color: $contentTextColor !important;
         background-color: $contentBackgroundColor !important;
     }
 }
 
-.red-container {
-    @include colored-container($containerRed);
-}
-.green-container {
-    @include colored-container($containerGreen);
-}
-.yellow-container {
-    @include colored-container($containerYellow);
-}
-.blue-container {
-    @include colored-container($containerBlue);
-}
-.gray-container {
-    @include colored-container($containerGray);
+
+$colors: "red", "green", "yellow", "blue", "gray";
+
+@each $color in $colors {
+    .#{$color}-container {
+        @include colored-container(var(--yomiyasu-dark-#{$color}),
+            var(--yomiyasu-white),
+            var(--yomiyasu-white),
+            var(--yomiyasu-black));
+    }
 }
 
 </style>

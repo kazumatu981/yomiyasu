@@ -37,6 +37,7 @@ $triangle-size: 8px;
     left: -$size * 2 + $offsetFromLeft;
     margin-top: $verticalOffset;
 }
+
 .chat {
     display: flex;
     flex-direction: row;
