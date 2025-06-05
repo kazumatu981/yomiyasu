@@ -23,10 +23,11 @@ defineProps({
 
 <style lang="scss" scoped>
 
+@use 'sass:color' as color;
 $corner-radius: 0.5rem;
 $icon-size: 1.2rem;
 
-$labelTextColor: var(--vp-c-white);
+$labelTextColor: var(--vp-c-accent-text);
 $contentBackgroundColor: var( --vp-c-bg-alt);
 $containerRed: var(--accent2-color);
 $containerGreen: var(--accent1-color);
