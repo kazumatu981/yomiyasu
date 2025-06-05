@@ -27,8 +27,9 @@ export default defineUserConfig({
                 link: '/contents/'
             },
             {
-                text: '♥️感性的側面',
-                prefix: '/contents/emotion/',
+                text: '感性的側面',
+                prefix: '/contents/emotional/',
+                link: '/contents/emotional/',
                 children: [
                     {
                         text: 'いってはいけない言葉たち',
@@ -46,7 +47,7 @@ export default defineUserConfig({
                 ]
             },
             {
-                text: '🏭技術的側面',
+                text: '技術的側面',
                 prefix: '/contents/technical/',
                 link: '/contents/technical/',
                 children: [
