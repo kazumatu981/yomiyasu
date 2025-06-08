@@ -4,21 +4,11 @@
 
 ソフトウェア開発(プログラミング)をしていると、以下のような現象に見舞われることがある。
 
-::labeled-container-with-fa-icon{type="bug" label="事例1"}
+::labeled-container-with-fa-icon{type="bug" label="事例"}
 
-先輩から引き継いだソースコードが読みづらい。
-
-::
-
-::labeled-container-with-fa-icon{type="bug" label="事例2"}
-
-過去に自分が書いたソースコードについて、何を書いているかわからなくなった。
-
-::
-
-::labeled-container-with-fa-icon{type="bug" label="事例3"}
-
-共同開発者が記述するソースコードを読めない。
+* 先輩から引き継いだソースコードが読みづらい。
+* 過去に自分が書いたソースコードについて、何を書いているかわからなくなった。
+* 共同開発者が記述するソースコードを読めない。
 
 ::
 
