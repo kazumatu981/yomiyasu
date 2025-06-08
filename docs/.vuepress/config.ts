@@ -11,6 +11,7 @@ const __dirname = import.meta.dirname || getDirname(import.meta.url);
 export default defineUserConfig({
     bundler: viteBundler(),
     theme: defaultTheme({
+        // ナビゲーションバー
         navbar:[
             {
                 text: 'home',
@@ -21,6 +22,7 @@ export default defineUserConfig({
                 link: '/about.html',
             }
         ],
+        // サイドバー
         sidebar: [
             {
                 text: '「よみやすさ」とは',
@@ -71,7 +73,15 @@ export default defineUserConfig({
             },
         ],
         sidebarDepth: 1,
+        // ロゴ
         logo:  '/assets/img/logo.drawio.svg',
+
+        //プラグイン
+        themePlugins: {
+            prismjs: {
+                theme: 'vs',
+            }
+        }
     }),
 
     extendsMarkdown: (md) => {
