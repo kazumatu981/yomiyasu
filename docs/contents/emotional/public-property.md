@@ -13,7 +13,7 @@
 ITシステムが動作しなかったら、かかわる人全員が困ります。
 ITシステムにかかわる人を図に示しました。
 
-![コードの所有者モデル](../../assets/img/public-property_property_model.drawio.svg)
+![コードの所有者モデル](../../assets/img/emotional_public-property_property_model.drawio.svg)
 
 | 所有者                 | 説明                                                                       |
 | ---------------------- | -------------------------------------------------------------------------- |

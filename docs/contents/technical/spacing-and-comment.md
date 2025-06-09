@@ -9,11 +9,11 @@
 
 @tab 空白なし
 
-![龍](../../assets/img/dragon.png)
+![龍](../../assets/img/technical_dragon.png)
 
 @tab 空白あり
 
-![龍-空白](../../assets/img/dragon-with-ws.png)
+![龍-空白](../../assets/img/technical_dragon-with-ws.png)
 
 :::
 

@@ -114,7 +114,7 @@ while ( mustBeContinue )
 現在のソフトウェア開発では複数人で開発することがほとんどです。
 過去に誰かが開発したソフトウェアをメンテナンスすることもあります。
 
-![違和感](../assets//img/iwakan.drawio.svg)
+![違和感](../assets//img/index_iwakan.drawio.svg)
 
 ソースコード全体を見渡したときに、今回の箇所だけが、「名は体を表す変数名」なっていた場合、その部分だけが「違和感」「異物感」が出てしまうのです。
 
@@ -132,7 +132,7 @@ while ( mustBeContinue )
 それでは、どういう努力をして **統一性** を持たせればいいのでしょう？
 筆者は **技術的側面** と **感性的側面** の両面で努力が必要だと考えています。
 
-![読みやすさの構造](../assets//img/description_of_readable.drawio.svg)
+![読みやすさの構造](../assets//img/index_description_of_readable.drawio.svg)
 
 ### 技術的側面
 
