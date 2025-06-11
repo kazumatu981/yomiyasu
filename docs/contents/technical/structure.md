@@ -94,31 +94,40 @@
 
 ### メソッド(関数)の中身
 
+#### フローチャートはどう書けばいい？
+
 プログラミングを始めたてのころ、
-[「関数を実装するときは、フローチャートを描こう」]{.green-text}
+[関数を実装するときは、フローチャートを描こう]{.green-text}
 と習います。
-ただし、「フローチャートをどのように書けばよいか」はなかなか習う機会がありません。
+ただし、[フローチャートをどのように書けばよいか]{.red-text} はなかなか習う機会がありません。
+文法は習いますが、どう使うかを習いません。
+なので、うまく設計できないのです。
+今回は、うまく設計するひとつのヒントとして「三階建て構造」のパターンを例を示しながら説明します。
 
+#### 三階建てのパターン
 
-```typescript
-function runSomething(options: SomeOptions) {
-    // ## initialize
-    // ### validation
-    // 引数, グローバル変数やプロパティなどの妥当性を検証する 
-    // ### transformation
-    // 処理しやすいように変換する 
+現在一般的に使われているプログラミング言語の多くは、チューリング型と呼ばれる、設計を行います。
+つまり、やることを順々に書いていくスタイルが最小単位の設計になります。
+それでは、一番小さい単位である関数は、どのような順で書いていけばいいでしょうか？
 
-    // ## execute
-    // ### execution
-    // 処理を実行する
+筆者は次の構造で書くことを推奨します。
 
-    // ## finalize
-    // ### transformation
-    // 呼び出し元が取り出しやすいように変換する
-    // ### return
-    // 戻す
-}
-```
+* [initialize: ]{.blue-text}準備
+  * validation
+    * 引数や状態変数などの妥当性を検証する
+  * initialization
+    * 各種状態を初期化する
+* [execute: ]{.blue-text}実行
+  * 実装したい処理の本体を記述する
+* [finalize: ]{.blue-text}後片付け
+  * 出力処理や後処理を記述する
+
+#### 三階建てパターンの実装例
+
+それでは、三階建てパターンの実装例を示します。
+引数で指定する数(`baseNumber`) の倍数をある数(`maxNumber`)まで足し合わせる関数の実装を考えます。
+
+step0 から順に最初はコメント文を多めに記述して順に実装していって最後に余計なコメント文を削除します。
 
 :::tabs
 
@@ -126,75 +135,72 @@ function runSomething(options: SomeOptions) {
 
 ```typescript{1}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-    // ## initialize
-    // ### validation
-    // 引数, グローバル変数やプロパティなどの妥当性を検証する 
-    // ### transformation
-    // 処理しやすいように変換する 
-
-    // ## execute
-    // ### execution
-    // 処理を実行する
-
-    // ## finalize
-    // ### transformation
-    // 呼び出し元が取り出しやすいように変換する
-    // ### return
-    // 戻す
+// * [initialize: ]{.blue-text}準備
+//   * validation
+//     * 引数や状態変数などの妥当性を検証する
+//   * initialization
+//     * 各種状態を初期化する
+// * [exeute: ]{.blue-text}実行
+//   * 実装したい処理の本体を記述する
+// * [finalize: ]{.blue-text}後片付け
+//   * 出力処理や後処理を記述する
 }
 ```
+
+まずは関数のインタフェースを定めて、三階建てパターンの「下敷き」を作ります。
+Visual Studio Codeなどでは、コードスニペットなどを使うとパターンを忘れないので、便利です。
 
 @tab step 1
 
 ```typescript{5-6,12,17-18,23,27}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-    // ## initialize
-    // ### validation
-    // 引数が負の数でないことをチェック
-    // 整数チェック
-    // ### transformation
-    // `{ 1, 2, 3, ..., maxNumber }` の配列を作る
+// * [initialize: ]{.blue-text}準備
+//   * validation
+//     * 引数や状態変数などの妥当性を検証する
+//   * initialization
+//     * 各種状態を初期化する
 
-    // ## execute
-    // ### execution
-    // baseNumberで割り切れるものを取り出す(フィルタ処理をする)
-    // フィルタしたものをすべて足し合わせる
+// * [execute: ]{.blue-text}実行
+//   * 実装したい処理の本体を記述する
 
-    // ## finalize
-    // ### transformation
-    // 変換の必要はない
-    // ### return
+// * [finalize: ]{.blue-text}後片付け
+//   * 出力処理や後処理を記述する
     return result;
 }
 ```
+
+コメントに空行を入れたり、最後の出力は `return` 文で決まっているので、あらかじめ準備します。
 
 @tab step 2
 
 ```typescript{6,7,14,20,22,31}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-    // ## initialize
-    // ### validation
+    // * [initialize: ]{.blue-text}準備
+    //   * validation
     // 引数が負の数でないことをチェック
     if(baseNumber <= 0 || maxNumber <= 0) throw new Error('負の数は使えません');
     // TODO 整数チェック
-    // ### transformation
+    //   * initialization
+    //     * 各種状態を初期化する
     // `{ 1, 2, 3, ..., maxNumber }` の配列を作る
     const baseArray = Array.from({length: maxNumber}, (_, i) => i + 1);
 
-    // ## execute
-    // ### execution
+    // * [execute: ]{.blue-text}実行
+    //   * 実装したい処理の本体を記述する
     // baseNumberで割り切れるものを取り出す(フィルタ処理をする)
     const filtered = baseArray.filter(i => i % baseNumber === 0);
     // フィルタしたものをすべて足し合わせる
     const result = filtered = filtered.reduce((acc, next) => acc + next);
 
-    // ## finalize
-    // ### transformation
-    // 変換の必要はない
-    // ### return
+    // * [finalize: ]{.blue-text}後片付け
+    //   * 出力処理や後処理を記述する
     return result;
+
 }
 ```
+
+そろそろ概形が見えてきました。
+これだと、コメントが余計ですね
 
 @tab step 3
 
@@ -216,6 +222,12 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
 }
 ```
 
+余計なコメントを削除して完成です。
+どうですか読みやすいコードが実装できましたね。
+
 :::
+
+このように、最初はコメントを多い目に記述してそれを整理しながら、コードを完成していきます。
+
 
 ### 継承モデルの考え方
