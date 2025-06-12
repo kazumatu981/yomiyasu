@@ -3,7 +3,6 @@ import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
 import markdownItMdc from 'markdown-it-mdc'
 import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
-import { markdownTabPlugin } from '@vuepress/plugin-markdown-tab'
 import { getDirname, path } from 'vuepress/utils'
 
 const __dirname = import.meta.dirname || getDirname(import.meta.url);
@@ -90,12 +89,6 @@ export default defineUserConfig({
     plugins: [
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
-        }),
-        markdownTabPlugin({
-            // Enable code tabs
-            codeTabs: true,
-            // Enable tabs
-            tabs: true,
         }),
     ],
 
