@@ -24,6 +24,10 @@ export default defineUserConfig({
         // サイドバー
         sidebar: [
             {
+                text: 'Home',
+                link: '/'
+            },
+            {
                 text: '「よみやすさ」とは',
                 link: '/contents/'
             },

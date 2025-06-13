@@ -1,0 +1,36 @@
+
+.wide-content {
+    max-width: 100%;
+}
+div.home {
+
+    // タイトル
+    div.title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    // コンセプト
+    div.concept {
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+    }
+    // メインコンテンツ
+    div.contents {
+    }
+    // フッター
+    div.footer {
+        margin-top: 3rem;
+        border-top: var(--yomiyasu-dark-gray) 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+        font-size: xx-small;
+        color: var(--yomiyasu-gray);
+        span {
+            margin-left: 1rem;
+        }
+    }
+}
