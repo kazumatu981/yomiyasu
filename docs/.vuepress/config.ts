@@ -8,7 +8,22 @@ import { getDirname, path } from 'vuepress/utils'
 const __dirname = import.meta.dirname || getDirname(import.meta.url);
 
 export default defineUserConfig({
-    bundler: viteBundler(),
+
+    // ---------------------------------------
+    // Site
+    base: '/yomiyasu/',
+    lang: 'ja-JP',
+    title: 'よみやすコード',
+    description: 'よみやすいコードを書くために私たちは何をすべきか',
+    head: [
+        // font-awesome
+        ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
+        // favicon
+        ['link', {rel: 'icon', href: './assets/img/icon.drawio.svg', type: 'image/svg+xml'}],
+    ],
+
+    // ---------------------------------------
+    // Theme
     theme: defaultTheme({
         // ナビゲーションバー
         navbar:[
@@ -87,26 +102,27 @@ export default defineUserConfig({
         }
     }),
 
+    // ---------------------------------------
+    // Bundler
+    bundler: viteBundler(),
+
+    // ---------------------------------------
+    // Common
+    dest: `./dist`,
+
+    // ---------------------------------------
+    // Markdown
     extendsMarkdown: (md) => {
         md.use(markdownItMdc);
     },
+
+    // ---------------------------------------
+    // Plugin
     plugins: [
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
     ],
 
-    head: [
-        ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
-        ['link', {rel: 'icon', href: './assets/img/icon.drawio.svg', type: 'image/svg+xml'}],
-    ],
 
-    lang: 'ja-JP',
-
-    title: 'よみやすコード',
-    description: 'よみやすいコードを書くために私たちは何をすべきか',
-
-    dest: `./dist`,
-
-    base: '/yomiyasu/',
 })
