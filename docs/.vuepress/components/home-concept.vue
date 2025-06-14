@@ -14,7 +14,7 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-// コンセプト
+
 div.concept {
     display: grid;
     grid-template-columns: 1fr 0.7fr;        

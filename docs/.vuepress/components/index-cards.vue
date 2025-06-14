@@ -3,6 +3,15 @@ import { defineProps, computed } from 'vue';
 
 const props = defineProps({
     /**
+     * Title for the index cards component
+     * @type {string}
+     */
+    title: {
+        type: String,
+        required: false,
+        default: 'Table of Contents'
+    },
+    /**
      * Array of card objects to display
      * @type {Array<{ icon: string, label: string, description: string, link: string }>}
      */
@@ -32,8 +41,6 @@ const parsedCards = computed(() => {
 
 <style lang="scss" scoped>
 .index-cards {
-    // display: flex;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
@@ -42,6 +49,7 @@ const parsedCards = computed(() => {
 </style>
 
 <template>
+    <h2>{{ title }}</h2>
     <div class="index-cards">
         <index-card
             v-for="(card, index) in parsedCards"

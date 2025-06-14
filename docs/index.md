@@ -1,8 +1,13 @@
 ---
+
 home: true
 heroImage: /assets/img/logo.drawio.svg
+
 ---
 
+<!-- markdownlint-disable-file MD022 -->
+<!-- markdownlint-disable-file MD026 -->
+<!-- markdownlint-disable-file MD041 -->
 
 ::home-concept
 ---
@@ -17,13 +22,9 @@ image: ./assets/img/yomiyasu-code.png
 読みやすいなぁと感じたソースコードの多くは、[書き手のやさしさや思いが伝わってきた]{.blue-text}ものです。
 
 より多くの人に読みやすいコードを書いてもらいたいという思いで筆を取りました。
-
 ::
 
-## Table Of Contents
-
 :: index-cards
-
 ---
 cards:
     - icon: fa-tags
@@ -34,13 +35,22 @@ cards:
         主観的なもの？確かにその通りです。
         でも、共通の考え方とかないですか。
         その観点で「よみやすさ」という言葉を理解します。
-    - icon: fa-tags
+    - icon: fa-heart
       label: 感性的側面
       link: ./contents/emotional/index.html
       description: |
-        「よみやすさ」
-
+        ソースコードの半分は「やさしさ」でできています。
+        コードを書く心情のアンチパターンや心得をまとめました。
+    - icon: fa-industry
+      label: 技術的側面
+      link: ./contents/technical/index.html
+      description: |
+        読みやすいコードを書くためにどんなことを気を付ければよいか？
+        少し設計論も交えながら解説します。
 ---
-
 ::
 
+::div{.footer}
+[MIT]{.license}
+[Copyright (c) Kazuyoshi Matsumoto]{.copyright}
+::

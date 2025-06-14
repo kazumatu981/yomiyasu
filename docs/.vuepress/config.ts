@@ -89,6 +89,10 @@ export default defineUserConfig({
                     },
                 ]
             },
+            {
+                text: 'このドキュメントについて',
+                link: '/about.html'
+            }
         ],
         sidebarDepth: 1,
         // ロゴ
