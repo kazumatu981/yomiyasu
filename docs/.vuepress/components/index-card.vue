@@ -1,15 +1,38 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
+import markdownIt from 'markdown-it';
+
+const md =  new markdownIt();
 
 defineProps({
+    /**
+     * Icon to display in the label
+     * @type {string}
+     */
     icon: {
         type: String,
         required: true
     },
+    /**
+     * Label text to display in the card
+     * @type {string}
+     */
     label: {
         type: String,
         required: true
     },
+    /**
+     * Description text to display in the card
+     * @type {string}
+     */
+    description: {
+        type: String,
+        required: true,
+    },
+    /**
+     * Link to navigate to when clicking "see more"
+     * @type {string}
+     */
     link: {
         type: String,
         required: true
@@ -86,18 +109,21 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
 
 <template>
     <div class="index-card">
+        <!-- label -->
         <div class="index-card__label">
             <i class="fa-solid" :class="icon"></i>
             {{ label }}
         </div>
+        <!-- body -->
         <div class="index-card__content">
             <div class="index-card__content-content">
-                <slot></slot>
+                <div v-html="md.render(description)"></div>
             </div>
         </div>
+        <!-- link -->
         <div class="index-card__link">
             <a :href="link">
-                中身を見る
+                see more
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>

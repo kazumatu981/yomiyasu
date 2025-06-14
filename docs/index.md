@@ -20,27 +20,27 @@ image: ./assets/img/yomiyasu-code.png
 
 ::
 
-<div class="home">
+## Table Of Contents
 
+:: index-cards
 
-  <!-- メインコンテンツ -->
-  <div class="contents">
-    <div class="content-item">
-      <h3 class="content-item-title">
-        <!-- アイコン -->
-        <!-- テキスト -->
-      </h3>
-      <div></div>
-    </div>
-  </div>
+---
+cards:
+    - icon: fa-tags
+      label: 「よみやすさ」とは
+      link: ./contents/index.html
+      description: |
+        そもそも「よみやすさ」ってなんだろう？
+        主観的なもの？確かにその通りです。
+        でも、共通の考え方とかないですか。
+        その観点で「よみやすさ」という言葉を理解します。
+    - icon: fa-tags
+      label: 感性的側面
+      link: ./contents/emotional/index.html
+      description: |
+        「よみやすさ」
 
-  <!-- フッター -->
-  <div class="footer">
-    <div class="license-copyright">
-      <span class="license"> MIT Licensed</span>
-      <span class="copyright">Copyright © 2025 Kazuyoshi Matsumoto</span>
-    </div>
-  </div>
-</div>
+---
 
+::
 
