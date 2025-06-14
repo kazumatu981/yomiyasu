@@ -14,7 +14,7 @@ export default defineUserConfig({
     base: '/yomiyasu/',
     lang: 'ja-JP',
     title: 'よみやすコード',
-    description: 'よみやすいコードを書くために私たちは何をすべきか',
+    description: 'コードを書くために私たちは何をすべきか',
     head: [
         // font-awesome
         ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],

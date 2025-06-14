@@ -1,4 +1,6 @@
-
+#main-title {
+    display: none;
+}
 .wide-content {
     max-width: 100%;
 }
@@ -11,11 +13,6 @@ div.home {
         text-align: center;
     }
 
-    // コンセプト
-    div.concept {
-        display: grid;
-        grid-template-columns: 1fr 1fr;        
-    }
     // メインコンテンツ
     div.contents {
     }
