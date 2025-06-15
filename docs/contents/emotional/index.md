@@ -6,9 +6,11 @@
 
 <!-- TODO 頭書きを書く -->
 
+<!-- textlint-disable ja-technical-writing/sentence-length -->
 :: index-cards
 
 ---
+
 cards:
     - icon: fa-volume-xmark
       label: いってはいけない言葉たち
@@ -30,6 +32,9 @@ cards:
       description: |
         ソースコードの半分はやさしさでできています。
         どうやさしくするのかについてまとめました。
+
 ---
 
 ::
+
+<!--  textlint-enable ja-technical-writing/sentence-length  -->

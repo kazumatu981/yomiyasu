@@ -9,7 +9,8 @@
           "羊頭狗肉",
           "ああああ"
         ]
-      }
+      },
+      "comments": true
     },
     "rules": {
       "preset-ja-technical-writing": {
