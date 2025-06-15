@@ -50,6 +50,9 @@ cards:
 ---
 ::
 
+<!-- TODO toolsへのリンク -->
+<!-- TODO aboutへのリンク -->
+
 ::div{.footer}
 [MIT]{.license}
 [Copyright (c) Kazuyoshi Matsumoto]{.copyright}

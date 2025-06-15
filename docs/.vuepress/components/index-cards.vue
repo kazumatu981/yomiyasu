@@ -49,6 +49,7 @@ const parsedCards = computed(() => {
 </style>
 
 <template>
+  <!-- TODO スタイルをちゃんとする -->
     <h2>{{ title }}</h2>
     <div class="index-cards">
         <index-card

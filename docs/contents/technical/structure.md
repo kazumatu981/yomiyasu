@@ -230,3 +230,5 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
 このように、最初はコメントを多い目に記述してそれを整理しながら、コードを完成していきます。
 
 ### 継承モデルの考え方
+
+<!-- TODO 継承の三階建てモデル -->

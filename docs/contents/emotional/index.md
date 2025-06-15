@@ -4,6 +4,8 @@
 
 # <i class="fa-solid fa-heart"></i> 感性的側面
 
+<!-- TODO 頭書きを書く -->
+
 :: index-cards
 
 ---

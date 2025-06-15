@@ -90,6 +90,21 @@ export default defineUserConfig({
                 ]
             },
             {
+                text: 'お道具箱',
+                prefix: '/contents/tools/',
+                link: '/contents/tools/',
+                children: [
+                    {
+                        text: '「よみやすさ」を維持するツール',
+                        link: '/contents/tools/tools.html'
+                    },
+                    {
+                        text: '生成AIとのつきあい方',
+                        link: '/contents/tools/gen-ai.html'
+                    }
+                ]
+            },
+            {
                 text: 'このドキュメントについて',
                 link: '/about.html'
             }
