@@ -268,6 +268,7 @@ class ConsoleResultWriter extends ResultWriterBase {
 
 クラス図で書くと、以下のようになります。
 
+<!-- TODO 図の編集 -->
 ![クラス図](../../assets/img/thecnical_extends_model.drawio.svg)
 
 このようなクラス設計の場合、これらのクラスを使って、結果を取りまとめるメソッドを以下のように実装できます。
