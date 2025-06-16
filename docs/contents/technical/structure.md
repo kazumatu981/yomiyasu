@@ -266,5 +266,26 @@ class ConsoleResultWriter extends ResultWriterBase {
 }
 ```
 
-  `interface` `abstract class`
-<!-- TODO 継承の三階建てモデル -->
+クラス図で書くと、以下のようになります。
+
+![クラス図](../../assets/img/thecnical_extends_model.drawio.svg)
+
+このようなクラス設計の場合、これらのクラスを使って、結果を取りまとめるメソッドを以下のように実装できます。
+
+```typescript
+function printResult(args: SomeArgs, writer: ResultWriter) {
+  // 引数チェック
+  // 結果の取得
+  const results = getResult(/* 何らかの処理を実装 */);
+
+  // 結果の出力
+  for(const result of results) {
+    writer.writeResult(result);
+  }
+}
+```
+
+このように、より抽象度が高い `interface` を使うことで、それを使う `printResult()` はどこに出力するかを意識せずとも実装ができるようになる。
+
+さらに、`class` -> `abstract class` -> `interface` の順に抽象度が上がります。
+以上のように、「カプセル化された三階建て入れ子構造」を実現できました。
