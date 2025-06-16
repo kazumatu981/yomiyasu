@@ -179,7 +179,7 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
     //   * validation
     // 引数が負の数でないことをチェック
     if(baseNumber <= 0 || maxNumber <= 0) throw new Error('負の数は使えません');
-    // TODO 整数チェック
+    // ToDo 整数チェック
     //   * initialization
     //     * 各種状態を初期化する
     // `{ 1, 2, 3, ..., maxNumber }` の配列を作る
@@ -209,7 +209,7 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
 
     // 引数が負の数でないことをチェック
     if(baseNumber <= 0 || maxNumber <= 0) throw new Error('負の数は使えません');
-    // TODO 整数チェック
+    // ToDo 整数チェック
     // `{ 1, 2, 3, ..., maxNumber }` の配列を作る
     const baseArray = Array.from({length: maxNumber}, (_, i) => i + 1);
 
@@ -231,4 +231,40 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
 
 ### 継承モデルの考え方
 
+多くの高級開発言語は、オブジェクト指向のパラダイムを持っています。
+この機構は、コード設計を抽象化し、処理メインフローを直感的にとらえやすくするのに、大きな役割を果たしています。
+その中でも、実装と継承という考え方があります。
+実はこの考え方は、「カプセル化」を実現するための重要な役割を果たしています。
+
+特に、実装と継承がカプセル化に大きく貢献します。
+
+例えば下記のような、何らかの結果を出力するクラスを設計したと仮定します。
+
+```typescript
+interface ResultWriter {
+  writeResult(result: Result): Promise<void>
+}
+
+abstract class ResultWriterBase implements ResultWriter {
+  abstract protected writeLine(line: string): Promise<void>;
+  public writeResult(result: Result): Promise<void> {
+    // result ---> line
+    return this.writeLine(line);
+  }
+}
+
+class FileResultWriter extends ResultWriterBase {
+  protected witeLine(line: string): Promise<void> {
+    // write into file....
+  }
+}
+
+class ConsoleResultWriter extends ResultWriterBase {
+  protected witeLine(line: string): Promise<void> {
+    // write into console....
+  }
+}
+```
+
+  `interface` `abstract class`
 <!-- TODO 継承の三階建てモデル -->
