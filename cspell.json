@@ -20,6 +20,7 @@
         "node_modules",
         "package.json",
         ".textlintrc.json",
-        "cspell.json"
+        "cspell.json",
+        "docs/assets/**/*"
     ]
 }
