@@ -1,213 +1,114 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="461px" height="278px" viewBox="-0.5 -0.5 461 278" content="&lt;mxfile&gt;&lt;diagram id=&quot;3xn4p8px9DmA2pj75Lms&quot; name=&quot;ページ1&quot;&gt;7Vtbc9o6EP41nmke6PiCHXiMoWkf0k6mOTPteRS2sDWVLR9ZBOivPytbvmICCSQhM8pDsFarlXe//WTYHRvOLNl85SiLv7MQU8M2w43hzA3b9twx/JeCbSmwLNsrJREnoZI1ggfyFyuhqaQrEuK8oygYo4JkXWHA0hQHoiNDnLN1V23JaHfXDEV4R/AQILor/UVCEVdueNNm4hsmUay2ntjX5USCKmXlSR6jkK1bIueL4cw4Y6K8SjYzTGXwqriU6273zNY3xnEqjllglwseEV0p3wzbQ0lmOD4FA353RFKB+RIFuBZHHaVqVCiH5BEuC9FPnK+o+MUJLK+m4Z5aGioaYluFOF+ThKIURv6SpeJBzVgwRpREKVwHWN4OCB4xFwTQuVETgsmbCWJCwzu0ZSsZiVyg4E818mPGyV8wi6iyCdNcqEQbmx2NB7kSxFLKcQ4691V4rZ7oO9p0FO9QLpQgYJSiLCeL2o0E8YikPhOCJUppHUOEHjIZYGe+Bu7IGxFJdZMKK/AWb/bibdVZBPTDLMGCb0FFLZiqvFPMG4/VeN2kseMpWdzK4GtFWaSYE9WWm+SCC5Vfw7k2Hsi1HuqUFIjngrM/NbWk60tC6YxRBnDPU1YoVWlA8VIMJEFCwpAWxiCeJI3+kUkxH1mN5K5YOHcayU/lsBRxJpBAJVwSG4oWmN6znAjCpH1e6voZA1YUUXF9w50XEi5mLAUnEClQwZAGayxTQXlWeULSGAMpjoXWHoa2wvJIKCenI+kOINmcAukiz1rnAMQ27aDs/beSx1vB69ESJYSCBzeGPKmUBaXwDYj3FcvFMpwMltvmj9u+lmHPag1wqhj1dWZsxYk8e8wfeD1sIGEpywvqnduelJiFs3lxwEhXrXG2KScKzo+UppzKuFoSlFkiZTxafLJkSkjL03H56UyuyjDX+5Zn6Vqes+WR2zpsSxi8zhG9F5re1ma5YfVx1XJJ47cPvz4sn14Kho7zs3iistTy1Ke9hyZcM+TCGFLHSNPk9WniTCp+XKsL1xkmin6UvDd2fUSuNFMukin3nCUkx5oql0OVnXKGZswlMeaRwW9KTZfLo0v0JF16ZRuBN7vFDVWmeX7lpizfdYs0Y2OnSCNFDNYuaVFAjUkYAoy7hZtugcaX+WF+dmWpBkLo+lYzPli9OUd97kARZ3JcEacqmJ9SxfGeVftFCxmSQOxkyPGlXx91no26/Pvm5V+3W/4dqhmOh9LNMs3T822i67+n1X+959Z/B7E8Q/13OnRy9JnfEb308b0A8kWcrdJw1NO3XbdUbV/oh37roS/JNKqQL6amL/k+cPSXMMN2TPhbLgcttZ4fp37bUxuZ5p5bfvEP46OdyeB0wIHA5/ju+kbeXE9dDCfI0B5Fw+BOHr2v7c2La+D9HSxzMrwDfQs3Tiu/dLexvevldDq4DRAGHkqv7s2J1aSj3TlfdeQQZc7xk/9ot870E/ZIn1T+HXKr//V6WNqY1T1b3bPV+Ome7TvxRPdsPwpyumf7Ierq+lHy3tjpnu3HYIru2b47eLpn+6EYo3u2F0oX3bN9pZ7tgcbLbs92sPHi2qd3Xqo3oJ5qouE0vJEvOcFoQZlsXvohymMcKpdh/pbIHYpQw0g1Pi27Gxpwn29/S7XPrj2tBP8WAtOaVIL5prYkR9v26B5zAj7KNu3crKONw53Xq3oNTPAHiBTgTqNaIB5h8WQXvQWBVUHAMUWCPHZ3HMJAmbuXuWfULdO6r6bQdqpXtyoT5Z2qVe1XrXqGxuYBQ6V/O4aKlKh9HMoSGDZvjJXqzXt3zpf/AQ==&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="300px" height="340px" viewBox="-0.5 -0.5 300 340" content="&lt;mxfile&gt;&lt;diagram id=&quot;3xn4p8px9DmA2pj75Lms&quot; name=&quot;ページ1&quot;&gt;1VdNc9sgEP01zLSHZhBYX0fLsdNLZzrNIWcsEUkTLFyMI7u/vhAtlmXh1m3SNDmJfcDu8vatwYjOVrsbxdbVF1lwgQgudoheI0KCIAzNxyJ7h5CoQ0pVF4D1wG39gwOIAd3WBd8MFmopha7XQzCXTcNzPcCYUrIdLruXYhh1zUo+Am5zJsboXV3oqkMpxj3+mddlBZHpBCZWzK0FYFOxQrZHEJ0jOlNS6m602s24sOQ5Wrp9izOzARD7yMQWUkXzBCUUJTM0j1CaoukCIuu9O41LWvFGXxQlGkc59anktim43RAgmrVVrfntmuV2tjWiMFilVwKmmcqhxtRYG63kA59JIZVBGtmYiQwicqX57qQGfdrd8SHpGy5XXKu9WdN6alT56sNAF+Vhb0+DGQATZ1jxUB+iNEMZtYPsGk3HNP0x9XTkghdGmmBysZTtvAeOSeZNMbXSN+ZSyPyhgxa1PdA17iyoQkCsaX0Zw3JeG+kfimADni8B5Ce3KnerXIcyVXK3LPZXSnHBdP049O+rCmz9KmsTmWDQBCHJVUyiSRDidEJpGncO9m42HjrsMgIfJ5U+JHVZ8cfVN8zyb3yzFfpOGfWrUeGOauPrj8sU76fR0YGH5wfzqB2CwNMO4Ut0w+QdCpW8mlBpEFyRmIbJJMVhFGH6akIlb1GoQRT+P6Wmv1Qq3D/P0GfBNtXhJvxLZcYeZSbPVObFBMWe6z4S2l7Va9YMqIu+b+3TJcu723tq8ymXH0yZTBjsPh+fiDDPrkZ/aqGcdmmM8dOM82JGJXzZykpNjC22NO8FZt54Dh3ucBbsXHQZRwO4qB+9h7g4v+PuydiGH8V78u3CnX0j4d+/kV6gy5LhdRBMPF1GPF0WvUSXJW9ZROZ3lat7S/0bUdH7UNBBGf9AQcbs/wZ1F13/Z5LOfwI=&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
         <g>
-            <path d="M 40 240 L 40 200 L 400 200 L 400 240" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-            <path d="M 40 240 L 40 274 L 400 274 L 400 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-            <path d="M 40 240 L 400 240" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <rect x="0" y="0" width="300" height="340" rx="9" ry="9" fill="#ffffff" stroke="none" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212));"/>
+        </g>
+        <g>
+            <path d="M 75 70 L 75 95 Q 75 105 85 105 L 130 105 Q 140 105 140 115 L 140 125.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <path d="M 140 138.88 L 133.5 125.88 L 146.5 125.88 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+        </g>
+        <g>
+            <rect x="20" y="20" width="110" height="50" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
         </g>
         <g>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 358px; height: 1px; padding-top: 207px; margin-left: 41px;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 45px; margin-left: 21px;">
                             <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
-                                    &lt;&lt;interface&gt;&gt;
-                                    <div>
-                                        ResultWriter
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </foreignObject>
-                    <text x="220" y="219" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
-                        &lt;&lt;interface&gt;&gt;...
-                    </text>
-                </switch>
-            </g>
-        </g>
-        <g>
-            <path d="M 40 244 L 400 244" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-        </g>
-        <g>
-            <rect x="40" y="248" width="360" height="26" fill="none" stroke="none" pointer-events="all"/>
-        </g>
-        <g>
-            <g transform="translate(-0.5 -0.5)">
-                <switch>
-                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 350px; height: 1px; padding-top: 255px; margin-left: 46px;">
-                            <div style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 22px; overflow: hidden; color: #000000; ">
                                 <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                    +
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(121, 94, 38), rgb(176, 153, 105));">
-                                        writeResult
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        (
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(0, 16, 128), rgb(201, 215, 255));">
-                                        result
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        :
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        Result
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        ):
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        Promise
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        &lt;
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        void
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        &gt;
-                                    </span>
+                                    FileResultWriter
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="46" y="267" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px">
-                        + writeResult(result: Result): Promise&lt;void&gt;
+                    <text x="75" y="49" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                        FileResultWriter
                     </text>
                 </switch>
             </g>
         </g>
         <g>
-            <path d="M 0 40 L 0 0 L 460 0 L 460 40" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-            <path d="M 0 40 L 0 100 L 460 100 L 460 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-            <path d="M 0 40 L 460 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <path d="M 220 70 L 220 95 Q 220 105 210 105 L 150 105 Q 140 105 140 115 L 140 125.88" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <path d="M 140 138.88 L 133.5 125.88 L 146.5 125.88 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+        </g>
+        <g>
+            <rect x="165" y="20" width="110" height="50" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
         </g>
         <g>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 458px; height: 1px; padding-top: 7px; margin-left: 1px;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 45px; margin-left: 166px;">
                             <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
-                                    &lt;&lt;abstract&gt;&gt;
-                                    <div>
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    FileResultWriter
+                                </div>
+                            </div>
+                        </div>
+                    </foreignObject>
+                    <text x="220" y="49" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                        FileResultWriter
+                    </text>
+                </switch>
+            </g>
+        </g>
+        <g>
+            <path d="M 140 200 L 140 245.88" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <path d="M 140 258.88 L 133.5 245.88 L 146.5 245.88 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+        </g>
+        <g>
+            <rect x="80" y="140" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+        </g>
+        <g>
+            <g transform="translate(-0.5 -0.5)">
+                <switch>
+                    <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 170px; margin-left: 81px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-weight: 700;">
+                                        &lt;&lt;abstract&gt;&gt;
+                                    </span>
+                                    <div style="font-weight: 700;">
                                         ResultWriterBase
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="230" y="19" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle" font-weight="bold">
+                    <text x="140" y="174" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
                         &lt;&lt;abstract&gt;&gt;...
                     </text>
                 </switch>
             </g>
         </g>
         <g>
-            <path d="M 0 44 L 460 44" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-        </g>
-        <g>
-            <rect x="0" y="48" width="460" height="52" fill="none" stroke="none" pointer-events="all"/>
+            <rect x="80" y="260" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
         </g>
         <g>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 450px; height: 1px; padding-top: 55px; margin-left: 6px;">
-                            <div style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 48px; overflow: hidden; color: #000000; ">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 290px; margin-left: 81px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
                                 <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                    <div>
-                                        <div style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;">
-                                            <span style="color: light-dark(rgb(0, 0, 255), rgb(205, 205, 255));">
-                                                abstract
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 255), rgb(205, 205, 255));">
-                                                protected
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                            </span>
-                                            <span style="color: light-dark(rgb(121, 94, 38), rgb(176, 153, 105));">
-                                                writeLine
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                                (
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 16, 128), rgb(201, 215, 255));">
-                                                line
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                                :
-                                            </span>
-                                            <span style="color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                                string
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                                ):
-                                            </span>
-                                            <span style="color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                                Promise
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                                &lt;
-                                            </span>
-                                            <span style="color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                                void
-                                            </span>
-                                            <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
-                                                &gt;;
-                                            </span>
-                                        </div>
+                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-weight: 700;">
+                                        &lt;&lt;interface&gt;&gt;
+                                    </span>
+                                    <div style="font-weight: 700;">
+                                        ResultWriter
                                     </div>
-                                    +
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(121, 94, 38), rgb(176, 153, 105));">
-                                        writeResult
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        (
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(0, 16, 128), rgb(201, 215, 255));">
-                                        result
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        :
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        Result
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        ):
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        Promise
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        &lt;
-                                    </span>
-                                    <span style="font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre; color: light-dark(rgb(38, 127, 153), rgb(81, 157, 179));">
-                                        void
-                                    </span>
-                                    <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &quot;HackGen Console NF&quot;, Consolas, &quot;Courier New&quot;, monospace, Consolas, &quot;Courier New&quot;, monospace; font-size: 14px; white-space: pre;">
-                                        &gt;
-                                    </span>
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="6" y="67" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px">
-                        abstract protected writeLine(line: string): Promise&lt;void&gt;;+ writeResult(res...
+                    <text x="140" y="294" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                        &lt;&lt;interface&gt;&gt;...
                     </text>
                 </switch>
             </g>
-        </g>
-        <g>
-            <path d="M 230.15 100 L 230.4 187.21" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
-            <path d="M 230.44 200.21 L 223.9 187.23 L 236.9 187.2 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
         </g>
     </g>
     <switch>
