@@ -26,6 +26,7 @@ image: ./assets/img/yomiyasu-code.png
 
 :: index-cards
 ---
+title: はじめに
 cards:
     - icon: fa-tags
       label: 「よみやすさ」とは
@@ -35,6 +36,13 @@ cards:
         主観的なもの？確かにその通りです。
         でも、共通の考え方とかないですか。
         その観点で「よみやすさ」という言葉を理解します。
+---
+::
+
+:: index-cards
+---
+title: 「よみやすさ」を実現する方法
+cards:
     - icon: fa-heart
       label: 感性的側面
       link: ./contents/emotional/index.html
@@ -47,13 +55,32 @@ cards:
       description: |
         読みやすいコードを書くためにどんなことを気を付ければよいか？
         少し設計論も交えながら解説します。
+    - icon: fa-toolbox
+      label: お道具箱
+      link: ./contents/tools/index.html
+      description: |
+        読みやすいコードを書くためには道具が必要です。
+        どんな道具立てが必要ですか
 ---
 ::
 
-<!-- TODO toolsへのリンク -->
-<!-- TODO aboutへのリンク -->
+:: index-cards
+---
+title: このドキュメントについて
+cards:
+    - icon: fa-address-card
+      label: このドキュメントについて
+      link: ./about.html
+      description: |
+        このドキュメントを執筆するにあたっての「思い」などを書きました。
+---
+::
+
+
+<!-- TODO historyへのリンク -->
 
 ::div{.footer}
+[改訂履歴](./history.html)
 [MIT]{.license}
 [Copyright (c) Kazuyoshi Matsumoto]{.copyright}
 ::
