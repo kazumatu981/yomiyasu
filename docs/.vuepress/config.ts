@@ -34,6 +34,10 @@ export default defineUserConfig({
             {
                 text: 'about',
                 link: '/about.html',
+            },
+            {
+                text: 'history',
+                link: 'history.html',
             }
         ],
         // サイドバー
@@ -107,6 +111,10 @@ export default defineUserConfig({
             {
                 text: 'このドキュメントについて',
                 link: '/about.html'
+            },
+            {
+                text: '改訂履歴',
+                link: '/history.html'
             }
         ],
         sidebarDepth: 1,
