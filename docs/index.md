@@ -1,7 +1,7 @@
 ---
 
 home: true
-heroImage: /assets/img/logo.drawio.svg
+heroImage: /logo/logo.drawio.svg
 
 ---
 
@@ -12,7 +12,7 @@ heroImage: /assets/img/logo.drawio.svg
 ::home-concept
 ---
 title: 読みにくいコードは存在意義はない
-image: ./assets/img/yomiyasu-code.png
+image: ./img/yomiyasu-code.png
 ---
 
 プログラミング言語は、機械語を理解できない人でもコンピュータに命令を送るために開発されました。
