@@ -9,6 +9,8 @@
 そこで、読みやすいコードを書くための「技術」を集めてみました。
 ここでは、いくつかの観点から、その技術を紹介します。
 
+<!-- textlint-disable ja-technical-writing/sentence-length -->
+
 :: index-cards
 
 ---
@@ -57,3 +59,5 @@ cards:
         ここでは、きれいな仕組みについて見ていきましょう。
 ---
 ::
+
+<!--  textlint-enable ja-technical-writing/sentence-length  -->
