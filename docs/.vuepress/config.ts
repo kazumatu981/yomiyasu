@@ -19,7 +19,7 @@ export default defineUserConfig({
         // font-awesome
         ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
         // favicon
-        ['link', {rel: 'icon', href: './assets/img/icon.drawio.svg', type: 'image/svg+xml'}],
+        ['link', {rel: 'icon', href: '/logo/icon.drawio.svg', type: 'image/svg+xml'}],
     ],
 
     // ---------------------------------------
@@ -119,7 +119,7 @@ export default defineUserConfig({
         ],
         sidebarDepth: 1,
         // ロゴ
-        logo:  '/assets/img/logo.drawio.svg',
+        logo:  '/logo/logo.drawio.svg',
 
         //プラグイン
         themePlugins: {
