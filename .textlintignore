@@ -1,4 +1,7 @@
+<!-- markdownlint-disable-file MD041 -->
 dist
 node_modules
 docs/.vuepress
 docs/assets
+
+index.md

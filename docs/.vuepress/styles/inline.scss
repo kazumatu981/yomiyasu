@@ -1,0 +1,19 @@
+@use 'color' as my-colors;
+
+@mixin colored-emphasis-text($color: var(--yomiyasu-black)){
+    color: $color;
+    font-weight: bold;
+}
+
+$colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
+
+@each $colorName in $colorNames {
+    .#{$colorName}-text{
+        @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}));
+    }
+    [data-theme=dark] {
+        .#{$colorName}-text{    
+            @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}));
+        }
+    }
+}

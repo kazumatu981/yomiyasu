@@ -2,15 +2,25 @@
     "version": "0.2",
     "language": "en",
     "words": [
+        // サービス名
+        "Qiita",
+        // 企業名
+        "NEXCO",
+        // パッケージ名
+        "vuepress",
+        "textlint",
+        // 作者
         "Kazuyoshi",
         "Matsumoto",
-        "vuepress",
-        "textlint"
+        "kazumatu981",
+        // プロジェクト名
+        "yomiyasu"
     ],
     "ignorePaths": [
         "node_modules",
         "package.json",
         ".textlintrc.json",
-        "cspell.json"
+        "cspell.json",
+        "docs/assets/**/*"
     ]
 }

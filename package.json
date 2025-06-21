@@ -11,20 +11,25 @@
     "docs:lint": "textlint docs"
   },
   "devDependencies": {
+    "@textlint-ja/textlint-rule-no-synonyms": "latest",
+    "@textlint/textlint-plugin-markdown": "latest",
     "@vuepress/bundler-vite": "^2.0.0-rc.22",
+    "@vuepress/plugin-markdown-tab": "^2.0.0-rc.105",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.103",
     "@vuepress/theme-default": "^2.0.0-rc.101",
+    "markdown-it-mdc": "^0.2.5",
     "sass-embedded": "^1.87.0",
-    "vuepress": "^2.0.0-rc.22",
     "sudachi-synonyms-dictionary": "latest",
     "textlint": "latest",
-    "@textlint/textlint-plugin-markdown": "latest",
-    "textlint-rule-preset-ja-technical-writing": "latest",
-    "@textlint-ja/textlint-rule-no-synonyms": "latest",
+    "textlint-filter-rule-allowlist": "latest",
+    "textlint-filter-rule-comments": "latest",
     "textlint-rule-ja-hiragana-fukushi": "latest",
     "textlint-rule-ja-hiragana-hojodoushi": "latest",
     "textlint-rule-ja-hiragana-keishikimeishi": "latest",
     "textlint-rule-ja-joyo-or-jinmeiyo-kanji": "latest",
     "textlint-rule-ja-no-orthographic-variants": "latest",
-    "textlint-rule-ja-unnatural-alphabet": "latest"
+    "textlint-rule-ja-unnatural-alphabet": "latest",
+    "textlint-rule-preset-ja-technical-writing": "latest",
+    "vuepress": "^2.0.0-rc.22"
   }
 }
