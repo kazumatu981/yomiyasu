@@ -32,12 +32,81 @@ export default defineUserConfig({
                 link: '/',
             },
             {
+               text: 'let\'s start',
+               link: '/contents/', 
+            },
+            {
+                text: 'contents',
+                children: [
+                    {
+                        text: '感性的側面',
+                        link: '/contents/emotional/',
+                        children: [
+                            {
+                                text: 'いってはいけない言葉たち',
+                                link: '/contents/emotional/anti-pattern.html'
+                            },
+                            {
+                                text: 'コードは誰の持ち物か',
+                                link: '/contents/emotional/public-property.html'
+                            },
+                            {
+                                text: '読み手にやさしさを',
+                                link: '/contents/emotional/kindness.html'
+                            }
+                        ]
+                    },
+                    {
+                        text: '技術的側面',
+                        link: '/contents/technical/',
+                        children: [
+                            {
+                                text: '名付け',
+                                link: '/contents/technical/naming.html'
+                            },
+                            {
+                                text: '空白とコメント',
+                                link: '/contents/technical/spacing-and-comment.html'
+                            },
+                            {
+                                text: 'メトリクス',
+                                link: '/contents/technical/metrics.html'
+                            },
+                            {
+                                text: 'しくみ',
+                                link: '/contents/technical/structure.html'
+                            },
+                        ]
+                    },
+                    {
+                        text: 'お道具箱',
+                        link: '/contents/tools/',
+                        children: [
+                            {
+                                text: '「よみやすさ」を維持するツール',
+                                link: '/contents/tools/tools.html'
+                            },
+                            {
+                                text: '生成AIとのつきあい方',
+                                link: '/contents/tools/gen-ai.html'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 text: 'about',
                 link: '/about.html',
             },
             {
                 text: 'history',
                 link: 'history.html',
+            },
+            {
+                text: 'GitHub',
+                link: 'https://github.com/kazumatu981/yomiyasu',
+                target: '_blank',
+                rel: 'noopener noreferrer',
             }
         ],
         // サイドバー
