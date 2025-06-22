@@ -11,8 +11,14 @@ $colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
     .#{$colorName}-text{
         @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}));
     }
+    .light-#{$colorName}-text{
+        @include colored-emphasis-text(var(--yomiyasu-#{$colorName}));
+    }
     [data-theme=dark] {
         .#{$colorName}-text{    
+            @include colored-emphasis-text(var(--yomiyasu-#{$colorName}));
+        }
+        .light-#{$colorName}-text{    
             @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}));
         }
     }
