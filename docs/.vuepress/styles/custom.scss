@@ -28,3 +28,29 @@
         margin-right: 0.5rem;
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// img スタイル
+///////////////////////////////////////////////////////////////////////////////
+
+// #region 画像サイズ調整
+
+p {
+
+  img {
+    padding: 1.5rem;
+  }
+  // #region /contents/technical/naming.md
+  img[alt="適当な名前"] {
+      width: 50%;
+  }
+  // #endregion
+  
+  //#region /contents/technical/spacing-and-comment.md
+  img[alt^="龍"] {
+      width: 75%;
+  }
+  //#endregion
+  
+  // #endregion
+}
