@@ -9,17 +9,17 @@ $colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
 
 @each $colorName in $colorNames {
     .#{$colorName}-text{
-        @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}));
+        @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}-50));
     }
     .light-#{$colorName}-text{
-        @include colored-emphasis-text(var(--yomiyasu-#{$colorName}));
+        @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}-50));
     }
     [data-theme=dark] {
         .#{$colorName}-text{    
-            @include colored-emphasis-text(var(--yomiyasu-#{$colorName}));
+            @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}-50));
         }
         .light-#{$colorName}-text{    
-            @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}));
+            @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}-50));
         }
     }
 }
