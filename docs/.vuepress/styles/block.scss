@@ -1,4 +1,22 @@
+@use 'color' as my-colors;
+
 p {
     text-indent: 0.75rem;
 }
 
+
+$colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
+
+@each $colorName in $colorNames {
+    .#{$colorName}-colored {
+        color: var(--yomiyasu-#{$colorName});
+        background-color: var(--yomiyasu-white);
+    }
+    .#{$colorName}-invert-colored {
+        color: var(--yomiyasu-white);
+        background-color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-bordered-colored {
+        border: var(--yomiyasu-#{$colorName});
+    }
+}
