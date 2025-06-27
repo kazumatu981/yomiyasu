@@ -4,32 +4,38 @@ $lighten-weight: 10%;
 $lighten-weight2: 20%;
 
 :root {
-    --yomiyasu-white:  #f7f7f7;
     --yomiyasu-black: #333333;
+    --yomiyasu-white:  #f7f7f7;
+    
+    // グレースケール
+    --yomiyasu-xx-dark-gray: #494949;
+    --yomiyasu-x-dark-gray: #5f5f5f;
+    --yomiyasu-dark-gray: #747474;
+    --yomiyasu-gray: #8a8a8a;
+    --yomiyasu-light-gray:  #a5a5a5;
+    --yomiyasu-x-light-gray: #c1c1c1;
+    --yomiyasu-xx-light-gray: #dcdcdc;
+
 
     // 濃色
-    --yomiyasu-dark-gray: #666666;
     --yomiyasu-dark-green: #274135;
     --yomiyasu-dark-red: #963729;
     --yomiyasu-dark-blue: #392996;
     --yomiyasu-dark-yellow: #968929;
 
     // 通常色
-    --yomiyasu-gray: #8a8a8a;
     --yomiyasu-green: #5b6f66;
     --yomiyasu-red: #ae675d;
     --yomiyasu-blue: #695dae;
     --yomiyasu-yellow: #aea55d;
 
     // 淡色
-    --yomiyasu-light-gray:  #afafaf;
     --yomiyasu-light-green: #8f9c96;
     --yomiyasu-light-red: #c79790;
     --yomiyasu-light-blue: #9890c7;
     --yomiyasu-light-yellow: #c7c090;
 
     // 超淡色
-    --yomiyasu-x-light-gray: #e5e5e5;
     --yomiyasu-x-light-green: #c7d5d0;
     --yomiyasu-x-light-red: #e5c7c0;
     --yomiyasu-x-light-blue: #d0c7e5;
