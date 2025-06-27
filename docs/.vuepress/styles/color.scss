@@ -3,42 +3,65 @@
 $lighten-weight: 10%;
 $lighten-weight2: 20%;
 
+$colorRates: 25, 50, 75;
+
+
+// 黒と白とグレー
+$yomiyasuBlack: #333333;
+$yomiyasuWhite: #f7f7f7;
+$yomiyasuGray: #8a8a8a;
+
+// テーマカラー
+$yomiyasuThemeColor: #5b724a; // ハミングバードグリーン
+
+// 三原色＋黄色
+$yomiyasuRed: #ae675d;
+$yomiyasuGreen: #5b6f66;
+$yomiyasuBlue: #695dae;
+$yomiyasuYellow: #aea55d;
+
 :root {
-    --yomiyasu-black: #333333;
-    --yomiyasu-white:  #f7f7f7;
-    
+
+    --yomiyasu-black: #{color.adjust($yomiyasuBlack)};
+    --yomiyasu-white: #{color.adjust($yomiyasuWhite)};
+
     // グレースケール
-    --yomiyasu-xx-dark-gray: #494949;
-    --yomiyasu-x-dark-gray: #5f5f5f;
-    --yomiyasu-dark-gray: #747474;
-    --yomiyasu-gray: #8a8a8a;
-    --yomiyasu-light-gray:  #a5a5a5;
-    --yomiyasu-x-light-gray: #c1c1c1;
-    --yomiyasu-xx-light-gray: #dcdcdc;
+    --yomiyasu-gray: #{color.adjust($yomiyasuGray)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-gray-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuGray, $rate * 1%)};
+        --yomiyasu-light-gray-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuGray, $rate * 1%)};
+    }
 
+    // テーマカラー
+    --yomiyasu-theme-color: #{color.adjust($yomiyasuThemeColor)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-theme-color-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuThemeColor, $rate * 1%)};
+        --yomiyasu-light-theme-color-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuThemeColor, $rate * 1%)};
+    }
+    
+    // 赤
+    --yomiyasu-red: #{color.adjust($yomiyasuRed)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-red-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuRed, $rate * 1%)};
+        --yomiyasu-light-red-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuRed, $rate * 1%)};
+    }
 
-    // 濃色
-    --yomiyasu-dark-green: #274135;
-    --yomiyasu-dark-red: #963729;
-    --yomiyasu-dark-blue: #392996;
-    --yomiyasu-dark-yellow: #968929;
-
-    // 通常色
-    --yomiyasu-green: #5b6f66;
-    --yomiyasu-red: #ae675d;
-    --yomiyasu-blue: #695dae;
-    --yomiyasu-yellow: #aea55d;
-
-    // 淡色
-    --yomiyasu-light-green: #8f9c96;
-    --yomiyasu-light-red: #c79790;
-    --yomiyasu-light-blue: #9890c7;
-    --yomiyasu-light-yellow: #c7c090;
-
-    // 超淡色
-    --yomiyasu-x-light-green: #c7d5d0;
-    --yomiyasu-x-light-red: #e5c7c0;
-    --yomiyasu-x-light-blue: #d0c7e5;
-    --yomiyasu-x-light-yellow: #e5e5c0;
-
+    // 緑
+    --yomiyasu-green: #{color.adjust($yomiyasuGreen)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-green-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuGreen, $rate * 1%)};
+        --yomiyasu-light-green-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuGreen, $rate * 1%)};
+    }
+    // 青
+    --yomiyasu-blue: #{color.adjust($yomiyasuBlue)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-blue-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuBlue, $rate * 1%)};
+        --yomiyasu-light-blue-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuBlue, $rate * 1%)};
+    }
+    // 黄
+    --yomiyasu-yellow: #{color.adjust($yomiyasuYellow)};
+    @each $rate in $colorRates {
+        --yomiyasu-dark-yellow-#{$rate}: #{color.mix($yomiyasuBlack, $yomiyasuYellow, $rate * 1%)};
+        --yomiyasu-light-yellow-#{$rate}: #{color.mix($yomiyasuWhite, $yomiyasuYellow, $rate * 1%)};
+    }
 }
