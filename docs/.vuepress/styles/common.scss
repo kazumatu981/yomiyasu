@@ -1,11 +1,28 @@
-@use 'color' as my-colors;
+@use 'color';
 
+p {
+    text-indent: 0.75rem;
+}
+
+
+$colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
+
+@each $colorName in $colorNames {
+    .#{$colorName}-colored {
+        color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-invert-colored {
+        color: var(--yomiyasu-white);
+        background-color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-bordered-colored {
+        border: var(--yomiyasu-#{$colorName});
+    }
+}
 @mixin colored-emphasis-text($color: var(--yomiyasu-black)){
     color: $color;
     font-weight: bold;
 }
-
-$colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
 
 @each $colorName in $colorNames {
     .#{$colorName}-text{
