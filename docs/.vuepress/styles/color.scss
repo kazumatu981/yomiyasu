@@ -1,9 +1,6 @@
 @use 'sass:color' as color;
 
-$lighten-weight: 10%;
-$lighten-weight2: 20%;
 
-$colorRates: 25, 50, 75;
 
 // テーマカラー
 $yomiyasuThemeColor: #85a16a; // Pickle
@@ -19,12 +16,17 @@ $yomiyasuGreen: color.mix(#00ff00, $yomiyasuThemeColor, 30%);
 $yomiyasuBlue: color.mix(#0000ff, $yomiyasuThemeColor, 30%);
 $yomiyasuYellow: color.mix(#ffff00, $yomiyasuThemeColor,30%);
 
+// 色の調整率
+$colorRates: 10, 20, 30, 40, 50, 60, 70, 80, 90;
+// 色名称定義
+$colorNames: "gray", "theme-color", "red", "green", "blue", "yellow";
+
 :root {
 
     --yomiyasu-black: #{color.adjust($yomiyasuBlack)};
-    --yomiyasu-black-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 70%)};
-    --yomiyasu-black-x-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 80%)};
-    --yomiyasu-black-xx-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 90%)};
+    --yomiyasu-black-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 85%)};
+    --yomiyasu-black-x-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 90%)};
+    --yomiyasu-black-xx-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 95%)};
     --yomiyasu-white: #{color.adjust($yomiyasuWhite)};
     --yomiyasu-white-soft: #{color.mix($yomiyasuWhite, $yomiyasuGray, 70%)};
     --yomiyasu-white-x-soft: #{color.mix($yomiyasuWhite, $yomiyasuGray, 80%)};

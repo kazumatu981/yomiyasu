@@ -1,39 +1,21 @@
-@use 'color';
-
-
-
-$colorNames: 'red', 'green', 'yellow', 'blue', 'gray';
+@use 'color' as *;
 
 @each $colorName in $colorNames {
-    .#{$colorName}-colored {
-        color: var(--yomiyasu-#{$colorName});
-    }
-    .#{$colorName}-invert-colored {
-        color: var(--yomiyasu-white);
-        background-color: var(--yomiyasu-#{$colorName});
-    }
-    .#{$colorName}-bordered-colored {
-        border: var(--yomiyasu-#{$colorName});
-    }
-}
-@mixin colored-emphasis-text($color: var(--yomiyasu-black)){
-    color: $color;
-    font-weight: bold;
-}
-
-@each $colorName in $colorNames {
-    .#{$colorName}-text{
-        @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}-50));
-    }
-    .light-#{$colorName}-text{
-        @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}-50));
+    .#{$colorName}-text-emphasis{
+        font-weight: bold;
+        color: var(--yomiyasu-dark-#{$colorName}-50);
+        background-color: var(--yomiyasu-light-#{$colorName}-80);
     }
     [data-theme=dark] {
-        .#{$colorName}-text{    
-            @include colored-emphasis-text(var(--yomiyasu-light-#{$colorName}-50));
-        }
-        .light-#{$colorName}-text{    
-            @include colored-emphasis-text(var(--yomiyasu-dark-#{$colorName}-50));
+        .#{$colorName}-text-emphasis{
+            font-weight: bold;
+            color: var(--yomiyasu-light-#{$colorName}-50);
+            background-color: var(--yomiyasu-dark-#{$colorName}-70);
         }
     }
+}
+
+.text-weak{
+    font-size: 0.75rem;
+    color: var(--vp-c-text-mute)
 }
