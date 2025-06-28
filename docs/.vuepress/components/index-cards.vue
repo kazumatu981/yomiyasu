@@ -45,6 +45,7 @@ const parsedCards = computed(() => {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
     justify-content: center;
+    margin: 1.5rem 0;
 }
 </style>
 
