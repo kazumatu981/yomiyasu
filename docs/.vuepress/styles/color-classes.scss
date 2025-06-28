@@ -43,3 +43,11 @@
         border-color: var(--yomiyasu-#{$colorName});
     }
 }
+
+.white-text {
+    color: var(--yomiyasu-white);
+}
+.white-text-b {
+    color: var(--yomiyasu-white);
+    font-weight: bold;
+}

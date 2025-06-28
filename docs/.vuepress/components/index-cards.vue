@@ -13,15 +13,10 @@ const props = defineProps({
     },
     /**
      * Array of card objects to display
-     * @type {Array<{ icon: string, label: string, description: string, link: string }>}
+     * @type {string}
      */
     cards: {
-        type: Array as () => Array<{
-            icon: string,
-            label: string,
-            description: string,
-            link: string
-        }>,
+        type: String,
         required: true
     }
 });

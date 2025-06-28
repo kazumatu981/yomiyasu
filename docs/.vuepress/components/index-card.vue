@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
 import markdownIt from 'markdown-it';
+import { useRouter } from 'vue-router';
 
 const md =  new markdownIt();
+const router = useRouter?.();
 
-defineProps({
+const props = defineProps({
     /**
      * Icon to display in the label
      * @type {string}
@@ -38,6 +40,16 @@ defineProps({
         required: true
     }
 })
+
+function goToLink() {
+    if (props.link) {
+        if (router) {
+            router.push(props.link);
+        } else {
+            window.location.href = props.link;
+        }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -46,6 +58,8 @@ $corner-radius: 0.5rem;
 $labelTextColor: var(--vp-c-white);
 $labelBackgroundColor: var(--vp-c-accent);
 $contentBackgroundColor: var( --vp-c-bg-alt);
+$cardBorderColor: var(--vp-c-accent);
+$borderWidth: 2px;
 
 .index-card {
     display: flex;
@@ -53,28 +67,36 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
     align-items: stretch;
 
     border-style: solid;
-    border-width: 1.5px;
+    border-width: $borderWidth;
     border-radius: $corner-radius;
+    border-color: $cardBorderColor;
+
     background-color: $contentBackgroundColor;
     box-shadow:none;
     
     &:hover {
         background-color: var(--vp-c-bg-elv);
-        box-shadow:5px 5px 10px #b2b2b2;
+        box-shadow:5px 5px 10px var(--vp-c-shadow);
     }
 
     
     .index-card__label {
         display: flex;
         align-items: center;
+        
+        margin-top: -$borderWidth;
+        margin-left: -$borderWidth;
+        margin-right: -$borderWidth;
+        padding:  0.5rem 1rem;
+
         font-size: 1.5rem;
 
         border-top-left-radius: $corner-radius;
         border-top-right-radius: $corner-radius;
-        padding:  0.5rem 1rem;
 
         background-color: $labelBackgroundColor;
         color: $labelTextColor;
+        
         i {
             padding-right: 0.5rem;
         }
@@ -108,11 +130,16 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
 </style>
 
 <template>
-    <div class="index-card">
+    <div class="index-card"
+         @click="goToLink"
+         tabindex="0"
+         role="link"
+         @keydown.enter="goToLink"
+    >
         <!-- label -->
         <div class="index-card__label">
             <i class="fa-solid" :class="icon"></i>
-            {{ label }}
+            <span class="index-card__label_text">{{ label }}</span>
         </div>
         <!-- body -->
         <div class="index-card__content">
@@ -122,7 +149,7 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
         </div>
         <!-- link -->
         <div class="index-card__link">
-            <a :href="link">
+            <a :href="link" @click.stop>
                 see more
                 <i class="fa-solid fa-arrow-right"></i>
             </a>

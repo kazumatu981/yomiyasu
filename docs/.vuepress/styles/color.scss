@@ -24,9 +24,9 @@ $colorNames: "gray", "theme-color", "red", "green", "blue", "yellow";
 :root {
 
     --yomiyasu-black: #{color.adjust($yomiyasuBlack)};
-    --yomiyasu-black-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 70%)};
-    --yomiyasu-black-x-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 80%)};
-    --yomiyasu-black-xx-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 90%)};
+    --yomiyasu-black-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 85%)};
+    --yomiyasu-black-x-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 90%)};
+    --yomiyasu-black-xx-soft: #{color.mix($yomiyasuBlack, $yomiyasuGray, 95%)};
     --yomiyasu-white: #{color.adjust($yomiyasuWhite)};
     --yomiyasu-white-soft: #{color.mix($yomiyasuWhite, $yomiyasuGray, 70%)};
     --yomiyasu-white-x-soft: #{color.mix($yomiyasuWhite, $yomiyasuGray, 80%)};
