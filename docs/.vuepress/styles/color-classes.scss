@@ -22,6 +22,12 @@
         .#{$colorName}-light-#{$rate}-bg {
             background-color: var(--yomiyasu-light-#{$colorName}-#{$rate});
         }
+        .#{$colorName}-dark-#{$rate}-border {
+            border-color: var(--yomiyasu-dark-#{$colorName}-#{$rate});
+        }
+        .#{$colorName}-light-#{$rate}-border {
+            border-color: var(--yomiyasu-light-#{$colorName}-#{$rate});
+        }
     }
     .#{$colorName}-text {
         color: var(--yomiyasu-#{$colorName});
@@ -32,5 +38,8 @@
     }
     .#{$colorName}-bg {
         background-color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-border {
+        border-color: var(--yomiyasu-#{$colorName});
     }
 }
