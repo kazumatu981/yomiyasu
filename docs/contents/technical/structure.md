@@ -32,7 +32,7 @@
 
 ## カプセル化
 
-[設計の極意は「カプセル化」にありと言っても過言ではありません。]{.red-text}
+[設計の極意は「カプセル化」にありと言っても過言ではありません。]{.red-text-emphasis}
 
 ::labeled-container-with-fa-icon{type="info" label="定義: カプセル化とは"}
 
@@ -69,8 +69,8 @@
 「設計としては、オブジェクト指向」のように扱えます。
 
 ここで重要なことは、
-[一部の処理構造を、呼び出し側から隠して]{.blue-text}、
-[内部の実装を知らずとも、機能を実現できる手段を提供できる]{.blue-text}
+[一部の処理構造を、呼び出し側から隠して]{.blue-text-emphasis}、
+[内部の実装を知らずとも、機能を実現できる手段を提供できる]{.blue-text-emphasis}
 ということです。
 
 ## 「カプセル化された三階建て入れ子構造」の実践
@@ -97,9 +97,9 @@
 #### フローチャートはどう書けばいい？
 
 プログラミングを始めたてのころ、
-[関数を実装するときは、フローチャートを描こう]{.green-text}
+[関数を実装するときは、フローチャートを描こう]{.green-text-emphasis}
 と習います。
-ただし、[フローチャートをどのように書けばよいか]{.red-text} はなかなか習う機会がありません。
+ただし、[フローチャートをどのように書けばよいか]{.red-text-emphasis} はなかなか習う機会がありません。
 文法は習いますが、どう使うかを習いません。
 なので、うまく設計できないのです。
 今回は、うまく設計するひとつのヒントとして「三階建て構造」のパターンを例を示しながら説明します。
@@ -112,14 +112,14 @@
 
 筆者は次の構造で書くことを推奨します。
 
-* [initialize: ]{.blue-text}準備
+* [initialize: ]{.blue-text-emphasis}準備
   * validation
     * 引数や状態変数などの妥当性を検証する
   * initialization
     * 各種状態を初期化する
-* [execute: ]{.blue-text}実行
+* [execute: ]{.blue-text-emphasis}実行
   * 実装したい処理の本体を記述する
-* [finalize: ]{.blue-text}後片付け
+* [finalize: ]{.blue-text-emphasis}後片付け
   * 出力処理や後処理を記述する
 
 #### 三階建てパターンの実装例
@@ -135,14 +135,14 @@ step0 から順に最初はコメント文を多めに記述して順に実装�
 
 ```typescript{1}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-// * [initialize: ]{.blue-text}準備
+// * initialize: 準備
 //   * validation
 //     * 引数や状態変数などの妥当性を検証する
 //   * initialization
 //     * 各種状態を初期化する
-// * [execute: ]{.blue-text}実行
+// * execute: 実行
 //   * 実装したい処理の本体を記述する
-// * [finalize: ]{.blue-text}後片付け
+// * finalize: 後片付け
 //   * 出力処理や後処理を記述する
 }
 ```
@@ -154,16 +154,16 @@ Visual Studio Codeなどでは、コードスニペットなどを使うとパ�
 
 ```typescript{5-6,12,17-18,23,27}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-// * [initialize: ]{.blue-text}準備
+// * initialize: 準備
 //   * validation
 //     * 引数や状態変数などの妥当性を検証する
 //   * initialization
 //     * 各種状態を初期化する
 
-// * [execute: ]{.blue-text}実行
+// * execute: 実行
 //   * 実装したい処理の本体を記述する
 
-// * [finalize: ]{.blue-text}後片付け
+// * finalize: 後片付け
 //   * 出力処理や後処理を記述する
     return result;
 }
@@ -175,7 +175,7 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
 
 ```typescript{6,7,14,20,22,31}
 function addMultiples(baseNumber: number, maxNumber: number): number {
-    // * [initialize: ]{.blue-text}準備
+    // * initialize: 準備
     //   * validation
     // 引数が負の数でないことをチェック
     if(baseNumber <= 0 || maxNumber <= 0) throw new Error('負の数は使えません');
@@ -185,14 +185,14 @@ function addMultiples(baseNumber: number, maxNumber: number): number {
     // `{ 1, 2, 3, ..., maxNumber }` の配列を作る
     const baseArray = Array.from({length: maxNumber}, (_, i) => i + 1);
 
-    // * [execute: ]{.blue-text}実行
+    // * execute: 実行
     //   * 実装したい処理の本体を記述する
     // baseNumberで割り切れるものを取り出す(フィルタ処理をする)
     const filtered = baseArray.filter(i => i % baseNumber === 0);
     // フィルタしたものをすべて足し合わせる
     const result = filtered = filtered.reduce((acc, next) => acc + next);
 
-    // * [finalize: ]{.blue-text}後片付け
+    // * finalize:  後片付け
     //   * 出力処理や後処理を記述する
     return result;
 

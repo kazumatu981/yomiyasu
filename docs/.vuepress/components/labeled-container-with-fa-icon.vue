@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ContainerType, safeIcon, safeLabel, safeColorClass } from './labeled-container-with-fa-icon';
+import { type ContainerType, safeIcon, safeLabel, safeColor } from './labeled-container-with-fa-icon';
 
 defineProps({
     type: {
@@ -23,9 +23,9 @@ defineProps({
 
 <style lang="scss" scoped>
 
-@use 'sass:color' as color;
 $corner-radius: 0.5rem;
 $icon-size: 1.2rem;
+$border-width: 2px;
 
 .labeled-container {
     display: flex;
@@ -33,7 +33,7 @@ $icon-size: 1.2rem;
     align-items: stretch;
 
     border-style: solid;
-    border-width: 1.5px;
+    border-width: $border-width;
     border-radius: $corner-radius;
 
     margin: 1.75rem 1rem;
@@ -42,17 +42,21 @@ $icon-size: 1.2rem;
         display: flex;
         align-items: center;
 
+        margin-top: -$border-width;
+        margin-left: -$border-width;
+        margin-right: -$border-width;
+
         border-top-left-radius: $corner-radius;
         border-top-right-radius: $corner-radius;
-        padding:  0.5rem 1rem;
 
         .labeled-container__label-icon {
             font-size: $icon-size;
+            padding:  0.5rem 1rem;
         }
         
         .labeled-container__label-label {
             font-weight: bold;
-            padding-left: 0.5rem;
+            padding:  0.5rem 0rem;
         }
     }
     
@@ -67,40 +71,13 @@ $icon-size: 1.2rem;
     }
 }
 
-@mixin colored-container(
-    $containerColor: var(--yomiyasu-dark-gray),
-    $labelTextColor: var(--yomiyasu-white),
-    $contentBackgroundColor: var( --yomiyasu-x-light-gray),
-    $contentTextColor: var(--yomiyasu-black)) {
-
-    border-color: $containerColor !important;
-    .labeled-container__label {
-        color: $labelTextColor !important;
-        background-color: $containerColor !important;
-    }
-    .labeled-container__content {
-        color: $contentTextColor !important;
-        background-color: $contentBackgroundColor !important;
-    }
-}
-
-
-$colors: "red", "green", "yellow", "blue", "gray";
-
-@each $color in $colors {
-    .#{$color}-container {
-        @include colored-container(var(--yomiyasu-dark-#{$color}),
-            var(--yomiyasu-white),
-            var(--yomiyasu-white),
-            var(--yomiyasu-black));
-    }
-}
-
 </style>
 
 <template>
-    <div class="labeled-container" :class="safeColorClass(type, colorClass)">
-        <div class="labeled-container__label">
+    <div class="labeled-container"
+        :class="`${safeColor(type, colorClass)}-border`">
+        <div class="labeled-container__label"
+        :class="`${safeColor(type, colorClass)}-bg white-text-b`">
             <div class="labeled-container__label-icon">
                 <i class="fa-solid" :class="safeIcon(type, icon)"></i>
             </div>

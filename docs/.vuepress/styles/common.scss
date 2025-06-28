@@ -1,0 +1,21 @@
+@use 'color' as *;
+
+@each $colorName in $colorNames {
+    .#{$colorName}-text-emphasis{
+        font-weight: bold;
+        color: var(--yomiyasu-dark-#{$colorName}-50);
+        background-color: var(--yomiyasu-light-#{$colorName}-80);
+    }
+    [data-theme=dark] {
+        .#{$colorName}-text-emphasis{
+            font-weight: bold;
+            color: var(--yomiyasu-light-#{$colorName}-50);
+            background-color: var(--yomiyasu-dark-#{$colorName}-70);
+        }
+    }
+}
+
+.text-weak{
+    font-size: 0.75rem;
+    color: var(--vp-c-text-mute)
+}

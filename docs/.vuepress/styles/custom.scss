@@ -1,0 +1,57 @@
+///////////////////////////////////////////////////////////////////////////////
+// Homeで使うローカルスタイル
+///////////////////////////////////////////////////////////////////////////////
+
+/*
+ * Homeのタイトル
+ */
+#main-title {
+    display: none;
+}
+
+
+/**
+ * フッタのスタイル
+ */
+.footer {
+    color: var(--yomiyasu-light-gray-50);
+    font-size: xx-small;
+    border-top: var(--yomiyasu-dark-gray-75) 1px solid;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-top: 3rem;
+    padding: 0.5rem 0;
+    /* フッタのコンテンツ */
+    span {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// img スタイル
+///////////////////////////////////////////////////////////////////////////////
+
+
+p {
+
+    text-indent: 0.75rem;
+
+    img {
+        padding: 1.5rem;
+    }
+
+    // #region /contents/technical/naming.md
+    img[alt="適当な名前"] {
+        width: 50%;
+    }
+    // #endregion
+    
+    //#region /contents/technical/spacing-and-comment.md
+    img[alt^="龍"] {
+        width: 75%;
+    }
+    //#endregion    
+}

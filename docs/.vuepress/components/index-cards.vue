@@ -13,15 +13,10 @@ const props = defineProps({
     },
     /**
      * Array of card objects to display
-     * @type {Array<{ icon: string, label: string, description: string, link: string }>}
+     * @type {string}
      */
     cards: {
-        type: Array as () => Array<{
-            icon: string,
-            label: string,
-            description: string,
-            link: string
-        }>,
+        type: String,
         required: true
     }
 });
@@ -45,6 +40,7 @@ const parsedCards = computed(() => {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
     justify-content: center;
+    margin: 1.5rem 0;
 }
 </style>
 
