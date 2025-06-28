@@ -1,0 +1,18 @@
+@use 'color' as *;
+
+@each $colorName in $colorNames {
+    @each $rate in $colorRates {
+        .#{$colorName}-dark-#{$rate}-text {
+            color: var(--yomiyasu-dark-#{$colorName}-#{$rate});
+        }
+        .#{$colorName}-light-#{$rate}-text {
+            color: var(--yomiyasu-light-#{$colorName}-#{$rate});
+        }
+    }
+    .#{$colorName}-text {
+        color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-bg {
+        background-color: var(--yomiyasu-#{$colorName});
+    }
+}
