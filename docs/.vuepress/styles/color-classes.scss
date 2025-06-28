@@ -8,9 +8,27 @@
         .#{$colorName}-light-#{$rate}-text {
             color: var(--yomiyasu-light-#{$colorName}-#{$rate});
         }
+        .#{$colorName}-dark-#{$rate}-text-b {
+            color: var(--yomiyasu-dark-#{$colorName}-#{$rate});
+            font-weight: bold;
+        }
+        .#{$colorName}-light-#{$rate}-text-b {
+            color: var(--yomiyasu-light-#{$colorName}-#{$rate});
+            font-weight: bold;
+        }
+        .#{$colorName}-dark-#{$rate}-bg {
+            background-color: var(--yomiyasu-dark-#{$colorName}-#{$rate});
+        }
+        .#{$colorName}-light-#{$rate}-bg {
+            background-color: var(--yomiyasu-light-#{$colorName}-#{$rate});
+        }
     }
     .#{$colorName}-text {
         color: var(--yomiyasu-#{$colorName});
+    }
+    .#{$colorName}-text-b {
+        color: var(--yomiyasu-#{$colorName});
+        font-weight: bold;
     }
     .#{$colorName}-bg {
         background-color: var(--yomiyasu-#{$colorName});
