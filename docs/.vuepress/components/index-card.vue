@@ -59,7 +59,7 @@ $contentBackgroundColor: var( --vp-c-bg-alt);
     box-shadow:none;
     
     &:hover {
-        background-color: var(--vp-c-bg-soft);
+        background-color: var(--vp-c-bg-elv);
         box-shadow:5px 5px 10px #b2b2b2;
     }
 
