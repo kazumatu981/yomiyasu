@@ -5,17 +5,24 @@ defineProps({
     userName: {
         type: String,
         required: true
+    },
+    iconColor: {
+        type: String,
+        default: 'blue'
     }
+    
 })
 </script>
 
 
 <style lang="scss" scoped>
 
+// チャットの文字色
+$messageTextColor: var(--vp-c-text);
 // チャットの背景色
 $messageBackgroundColor: var( --vp-c-bg-alt);
 // チャットのボーダー色
-$messageBorderColor: var(--accent5-color);
+$messageBorderColor: var(--vp-c-border-hard);
 
 // チャットテキストの角の半径
 $corner-radius: 0.5rem;
@@ -59,19 +66,20 @@ $triangle-size: 8px;
     }
 
     .chat_message {
-        font-size: 1.2rem;
-        border: solid 1px $messageBorderColor;
-        border-radius: $corner-radius;
-        
         position: relative;
         display: inline-block;
         padding: 7px 10px;
-        color: #555;
-        background:$messageBackgroundColor;
         box-sizing: border-box;
 
+        border: solid 1px $messageBorderColor;
+        border-radius: $corner-radius;
+        
+        color: $messageTextColor;
+        background:$messageBackgroundColor;
+        
+
         &::before {
-            @include left-triangle($triangle-size, $messageBackgroundColor, 1px, -1.25rem);
+            @include left-triangle($triangle-size, $messageBackgroundColor, 1.154px, -1.25rem);
             z-index: 2;
         }
         &::after {
@@ -88,7 +96,7 @@ $triangle-size: 8px;
     <div class="chat">
         <div class="chat_user">
             <div class="chat_user_icon">
-                <i class="fa-solid fa-user-tie"></i>
+                <i class="fa-solid fa-user-tie" :class="`${iconColor}-dark-20-text`"></i>
             </div>
             <div class="chat_user_name">
                 {{ userName }}
