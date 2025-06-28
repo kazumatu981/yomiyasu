@@ -5,14 +5,13 @@ $lighten-weight2: 20%;
 
 $colorRates: 25, 50, 75;
 
+// テーマカラー
+$yomiyasuThemeColor: #8b9916; // Woodruff Green
 
 // 黒と白とグレー
 $yomiyasuBlack: #333333;
-$yomiyasuWhite: #f7f7f7;
+$yomiyasuWhite: color.mix(#ffffff, $yomiyasuThemeColor, 98%);
 $yomiyasuGray: #8a8a8a;
-
-// テーマカラー
-$yomiyasuThemeColor: #8b9916; // Woodruff Green
 
 // 三原色＋黄色
 $yomiyasuRed: #ae675d;
