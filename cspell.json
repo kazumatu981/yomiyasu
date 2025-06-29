@@ -9,6 +9,8 @@
         // パッケージ名
         "vuepress",
         "textlint",
+        // アイコン名称
+        "xmark",
         // 作者
         "Kazuyoshi",
         "Matsumoto",

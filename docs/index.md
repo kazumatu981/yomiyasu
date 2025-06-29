@@ -6,6 +6,7 @@ heroImage: /logo/logo.drawio.svg
 ---
 
 <!-- markdownlint-disable-file MD022 -->
+<!-- markdownlint-disable-file MD024 -->
 <!-- markdownlint-disable-file MD026 -->
 <!-- markdownlint-disable-file MD041 -->
 
@@ -16,12 +17,12 @@ image: ./img/yomiyasu-code.png
 ---
 
 プログラミング言語は、機械語を理解できない人でもコンピュータに命令を送るために開発されました。
-つまり、ソースコードは誰もがとは言いませんが、多くの人にとって読みやすく書かれないと存在意義がありません。
+つまり、ソースコードは多くの人にとって[よみやすく書かれていないと、その存在意義に矛盾が生じます。]{.green-text-emphasis}
 
 筆者は、職業柄、様々な年代、世代の多くのソースコードに接してきました。
-読みやすいなぁと感じたソースコードの多くは、[書き手のやさしさや思いが伝わってきた]{.blue-text}ものです。
+よみやすいなぁと感じたソースコードの多くは、[書き手のやさしさや思いが伝わってきました。]{.blue-text-emphasis}。
 
-より多くの人に読みやすいコードを書いてもらいたいという思いで筆を取りました。
+ひとりでも多くの人に「よみやすいコード」を書いてもらいたい、「よみやすいコード」を書くための心構えを知ってもらいたいという思いで筆を取りました。
 ::
 
 :: index-cards
@@ -34,8 +35,7 @@ cards:
       description: |
         そもそも「よみやすさ」ってなんだろう？
         主観的なもの？確かにその通りです。
-        でも、共通の考え方とかないですか。
-        その観点で「よみやすさ」という言葉を理解します。
+        でも、共通の考え方があるはずです。
 ---
 ::
 
@@ -47,32 +47,29 @@ cards:
       label: 感性的側面
       link: ./contents/emotional/index.html
       description: |
-        ソースコードの半分は「やさしさ」でできています。
-        コードを書く心情のアンチパターンや心得をまとめました。
+        コードを書くための心構えを知ろう。
     - icon: fa-industry
       label: 技術的側面
       link: ./contents/technical/index.html
       description: |
-        読みやすいコードを書くためにどんなことを気を付ければよいか？
-        少し設計論も交えながら解説します。
+        具体的な方法論を知ろう。
     - icon: fa-toolbox
       label: お道具箱
       link: ./contents/tools/index.html
       description: |
-        読みやすいコードを書くためには道具が必要です。
-        どんな道具立てが必要ですか
+        どんな道具が必要ですか？
 ---
 ::
 
 :: index-cards
 ---
-title: このドキュメントについて
+title: この文書について
 cards:
     - icon: fa-address-card
-      label: このドキュメントについて
+      label: この文書について
       link: ./about.html
       description: |
-        このドキュメントを執筆するにあたっての「思い」などを書きました。
+        この文書を執筆するにあたっての「思い」をまとめました。
 ---
 ::
 
@@ -80,7 +77,6 @@ cards:
 <!-- TODO historyへのリンク -->
 
 ::div{.footer}
-[改訂履歴](./history.html)
 [MIT]{.license}
 [Copyright (c) Kazuyoshi Matsumoto]{.copyright}
 ::
