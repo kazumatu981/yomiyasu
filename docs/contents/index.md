@@ -20,8 +20,17 @@
 
 そしてこうなってから気づくのです。
 
-::chat{userName="後悔するひと"}
+::chat
+
+---
+userName: 後悔する人
+icon: fa-face-dizzy
+iconColor: red
+
+---
+
 なぜ「よみやすいコード」を書かなかったんだ！
+
 ::
 
 ## 人にやさしく
