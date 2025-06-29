@@ -2,6 +2,10 @@
 import { defineProps } from 'vue';
 
 defineProps({
+    icon: {
+        type: String,
+        default: 'fa-user-tie'
+    },
     userName: {
         type: String,
         required: true
@@ -96,7 +100,7 @@ $triangle-size: 8px;
     <div class="chat">
         <div class="chat_user">
             <div class="chat_user_icon">
-                <i class="fa-solid fa-user-tie" :class="`${iconColor}-dark-20-text`"></i>
+                <i class="fa-solid" :class="`${icon} ${iconColor}-dark-20-text`"></i>
             </div>
             <div class="chat_user_name">
                 {{ userName }}
