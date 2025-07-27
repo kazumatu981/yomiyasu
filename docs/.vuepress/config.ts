@@ -18,6 +18,14 @@ export default defineUserConfig({
     head: [
         // font-awesome
         ['script', {src: 'https://kit.fontawesome.com/df9e5b1dd2.js', crossorigin: 'anonymous'}],
+        // Google Analytics
+        ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-MTGKYL8BQJ'}],
+        ['script', {}, `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MTGKYL8BQJ');
+        `],
         // favicon
         ['link', {rel: 'icon', href: '/logo/icon.drawio.svg', type: 'image/svg+xml'}],
     ],
